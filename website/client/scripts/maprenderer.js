@@ -19,7 +19,7 @@ MapRenderer.prototype.initForMap = function (mapData) {
 
 MapRenderer.prototype._renderMap = function () {
     const canvas = this._context.canvas;
-    this._context.clearRect(0, 0, canvas.width, canvas.height);
+    this._context.clearRect(0, 0, this._map.roomDimensions.width, this._map.roomDimensions.height);
     this._context.strokeStyle = "black";
 
     for (const place of this._map.places) {

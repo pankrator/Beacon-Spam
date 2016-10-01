@@ -4,7 +4,7 @@
             name: "Alcohol",
             rects: [{
                 x: 100,
-                y: 200,
+                y: 20,
                 width: 200,
                 height: 50,
             }],
@@ -12,13 +12,13 @@
         {
             name: "Bakery",
             rects: [{
-                x: 300,
-                y: 400,
+                x: 800,
+                y: 750,
                 width: 50,
                 height: 150,
             }, {
-                x: 350,
-                y: 400,
+                x: 850,
+                y: 750,
                 width: 75,
                 height: 50,
             }],

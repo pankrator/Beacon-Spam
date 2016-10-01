@@ -28,6 +28,10 @@ SampleStatistician.prototype.updateTrackers = function () {
     });
 };
 
+SampleStatistician.prototype.getTrackers = function () {
+    return this._trackers;
+};
+
 // Taken from stackoverflow; not actual guid http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
 function guid() {
   function s4() {

@@ -1,5 +1,6 @@
 "use strict";
 
+const Charter = require("./charter");
 const MapRenderer = require("./maprenderer");
 const SampleStatistician = require("./sample_statistician");
 const Utils = require("./utils");
@@ -20,9 +21,18 @@ function main() {
     let statistician = new SampleStatistician();
     let tracker = statistician.registerTracker();
     renderer.registerTracker(tracker);
-    setInterval(() =>
-        tracker.addSample(Math.random() * canvas.width,
-                          Math.random() * canvas.height),
-        100);
+
+    let chartCanvas = document.getElementById("chart-canvas");
+    let charter = new Charter(chartCanvas.getContext("2d"));
+    mapPromise.done(mapData => {
+        charter.initForMap(mapData);
+        setInterval(() =>
+            tracker.addSample(Math.random() * mapData.roomDimensions.width,
+                            Math.random() * mapData.roomDimensions.height),
+            100);
+    });
+    // Wait for the tracker to put gather some data
+    setTimeout(() =>
+        charter.chartMostVisited(statistician.getTrackers(), "Most visited places"), 2000);
 };
 main();

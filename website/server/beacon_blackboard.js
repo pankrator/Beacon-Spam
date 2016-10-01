@@ -3,10 +3,12 @@
 module.exports = {
     /**
      * {
+     *  listernerId: ...,
      *  id: ....,
      *  name: ...,
      *  txPower: ....,
-     *  samples: [{rssi: ...., timestamp: .....}, ....]
+     *  samples: [{rssi: ...., timestamp: .....}, ....],
+     *  distanceToListener: ...
      * }
      */
     rawData: [],
@@ -25,7 +27,7 @@ module.exports = {
      */
     alreadySent: {},
 
-    add: function (data) {
+    addRaw: function (data) {
         module.exports.rawData.push(data);
     }
 };

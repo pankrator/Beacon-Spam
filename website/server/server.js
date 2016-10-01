@@ -1,13 +1,16 @@
 "use strict";
-let fs = require("fs");
-let path = require("path");
+const fs = require("fs");
+const path = require("path");
 
-let Q = require("q");
-let express = require("express");
-var session = require('express-session');
-let bodyParser = require("body-parser");
-let restify = require("restify");
+const Q = require("q");
+const express = require("express");
+const session = require('express-session');
+const bodyParser = require("body-parser");
+const restify = require("restify");
+const trilaterate = require('./maths/trilaterate');
+const beaconDistanceCalculator = require('./maths/distance');
 let beaconBlackboard = require('./beacon_blackboard');
+
 
 function Server() {
     Q.longStackSupport = true;
@@ -33,19 +36,26 @@ Server.prototype.listen = function() {
 let handleBeaconInfo = function (req, res) {
     /**
      * {
-     *  id: ....,
-     *  name: ...,
-     *  txPower: ....,
-     *  samples: [{rssi: ...., timestamp: .....}]
+     *  listernerId: ...,
+     *  beacon: {
+     *      id: ....,
+     *      name: ...,
+     *      txPower: ....,
+     *      samples: [{rssi: ...., timestamp: .....}]
+     *  }
      * }
      */
     var beaconData = {
-        id: req.body.id,
-        name: req.body.name,
-        txPower: req.body.txPower,
-        samples: req.body.samples
+        listernerId: req.body.listenerId,
+        id: req.body.beacon.id,
+        name: req.body.beacon.name,
+        txPower: req.body.beacon.txPower,
+        samples: req.body.beacon.samples
     }
-    beaconBlackboard.add(beaconData);
+    var distance = beaconDistanceCalculator(beaconData.samples);
+    beaconData.distanceToListener = distance;
+    beaconBlackboard.addRaw(beaconData);
+
     res.send();
 }
 

@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * [{
+ *  rssi: ...,
+ *  txPower: ....
+ * }]
+ */
 module.exports = function(measurements) {
     measurements = filterOutliers(measurements);
 

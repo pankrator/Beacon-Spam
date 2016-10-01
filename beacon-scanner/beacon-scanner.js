@@ -5,53 +5,67 @@ const jsonfile = require('jsonfile');
 
 const RSSI_THRESHOLD = -90;
 const EXIT_GRACE_PERIOD = 200; // milliseconds
-const FILENAME = './data.json';
+const FILENAME = './data2.json';
 
-var inRange = [];
+let inRange = [];
 
-noble.on('discover', function(peripheral) {
-    if (peripheral.rssi < RSSI_THRESHOLD) {
-        return;
-    }
+noble.on('discover', peripheral => {
+  if (peripheral.rssi < RSSI_THRESHOLD) {
+    return;
+  }
 
-    var id = peripheral.id;
-    var entered = !inRange[id];
+  let id = peripheral.id;
+  let name = peripheral.advertisement && peripheral.advertisement.localName;
+  let entered = !inRange[id];
 
-    if (entered) {
-        inRange[id] = {
-            peripheral: peripheral
-        };
+  if (typeof name !== 'undefined' && name.startsWith('Kontakt')) {
+    let rssi = peripheral.rssi;
+    let txPower = peripheral.advertisement.txPowerLevel;
+    let distance = calculateDistance(rssi, txPower);
+    console.log(distance);
 
-        var beaconData = JSON.stringify({
-          name: peripheral.advertisement.localName,
-          rssi: peripheral.rssi,
-          date: new Date()
-        }, null, '\t');
+    inRange[id] = {
+      peripheral: peripheral
+    };
 
-        fs.appendFile(FILENAME, beaconData);
+    let beaconData = JSON.stringify({
+      name,
+      rssi,
+      distance,
+      date: new Date()
+    }, null, '\t');
 
-        console.log('"' + peripheral.advertisement.localName + '" entered (RSSI ' + peripheral.rssi + ') ' + new Date());
-    }
+    fs.appendFile(FILENAME, `${beaconData},\n`);
 
-    inRange[id].lastSeen = Date.now();
+    console.log('"' + name + '" entered (RSSI ' + rssi + ') ' + new Date());
+  }
 });
 
-setInterval(function() {
-    for (var id in inRange) {
-        if (inRange[id].lastSeen < (Date.now() - EXIT_GRACE_PERIOD)) {
-            var peripheral = inRange[id].peripheral;
-
-            console.log('"' + peripheral.advertisement.localName + '" exited (RSSI ' + peripheral.rssi + ') ' + new Date());
-
-            delete inRange[id];
-        }
-    }
-}, EXIT_GRACE_PERIOD / 2);
-
-noble.on('stateChange', function(state) {
-    if (state === 'poweredOn') {
-        noble.startScanning([], true);
-    } else {
-        noble.stopScanning();
-    }
+noble.on('stateChange', state => {
+  if (state === 'poweredOn') {
+    noble.startScanning([], true);
+  } else {
+    noble.stopScanning();
+  }
 });
+
+function calculateDistance(rssi, txPower) {
+  if (rssi === 0) {
+    return false;
+  }
+
+  let ratio = rssi / txPower;
+  console.log(ratio);
+
+  if (ratio < 1) {
+    return Math.pow(ratio, 10);
+  } else {
+    let distance = (0.89976)*Math.pow(ratio,7.7095) + 0.111;
+    fs.appendFile('./distance.txt', `${rssi}\n`);
+    fs.appendFile('./time.txt', Date.now());
+    console.log(rssi);
+    console.log(Date.now());
+    return distance / 1000000;
+  }
+}
+

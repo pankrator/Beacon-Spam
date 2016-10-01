@@ -1,508 +1,3001 @@
 {
-	"name": "vívoactive\u0000",
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -53,
+	"date": "2016-10-01T07:25:30.730Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -59,
+	"date": "2016-10-01T07:25:30.803Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
 	"rssi": -79,
-	"date": "2016-10-01T07:06:53.088Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -80,
-	"date": "2016-10-01T07:06:53.147Z"
-}{
-	"rssi": -90,
-	"date": "2016-10-01T07:06:53.329Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:53.405Z"
-}{
+	"date": "2016-10-01T07:25:30.827Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:06:53.540Z"
-}{
-	"name": "Kontakt",
-	"rssi": -83,
-	"date": "2016-10-01T07:06:53.684Z"
-}{
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -53,
+	"date": "2016-10-01T07:25:31.066Z"
+},
+{
 	"name": "KontaktApple",
-	"rssi": -59,
-	"date": "2016-10-01T07:06:53.759Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -81,
-	"date": "2016-10-01T07:06:53.764Z"
-}{
-	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
 	"rssi": -55,
-	"date": "2016-10-01T07:06:53.898Z"
-}{
+	"date": "2016-10-01T07:25:31.157Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -78,
+	"date": "2016-10-01T07:25:31.187Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -80,
+	"date": "2016-10-01T07:25:31.541Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -48,
+	"date": "2016-10-01T07:25:31.782Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -57,
+	"date": "2016-10-01T07:25:31.871Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -79,
+	"date": "2016-10-01T07:25:31.894Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -47,
+	"date": "2016-10-01T07:25:32.140Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -58,
+	"date": "2016-10-01T07:25:32.223Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -78,
+	"date": "2016-10-01T07:25:32.247Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -51,
+	"date": "2016-10-01T07:25:32.496Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -56,
+	"date": "2016-10-01T07:25:32.581Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -81,
+	"date": "2016-10-01T07:25:32.600Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -51,
+	"date": "2016-10-01T07:25:32.854Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -54,
+	"date": "2016-10-01T07:34:45.135Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -82,
+	"date": "2016-10-01T07:34:45.253Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -53,
+	"date": "2016-10-01T07:34:45.479Z"
+},
+{
+	"name": "KontaktApple",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0001�",
+	"rssi": -54,
+	"date": "2016-10-01T07:34:45.486Z"
+},
+{
+	"name": "Kontakt",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>�܇ĳ",
+	"rssi": -78,
+	"date": "2016-10-01T07:34:45.605Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -52,
+	"date": "2016-10-01T07:34:45.611Z"
+},
+{
+	"name": "KontaktGoogle",
+	"manufacturerData": "L\u0000\u0002\u0015��m�O�N��$�[q��>\u0000\u0001\u0000\u0002�",
+	"rssi": -53,
+	"date": "2016-10-01T07:34:45.964Z"
+},
+{
 	"name": "Kontakt",
 	"rssi": -80,
-	"date": "2016-10-01T07:06:54.040Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -76,
-	"date": "2016-10-01T07:06:54.065Z"
-}{
+	"date": "2016-10-01T07:38:35.615Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"date": "2016-10-01T07:38:35.671Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -74,
+	"date": "2016-10-01T07:38:35.959Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -77,
+	"date": "2016-10-01T07:38:35.965Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:38:36.023Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -47,
+	"date": "2016-10-01T07:38:36.180Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:36.381Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:36.387Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -46,
+	"date": "2016-10-01T07:38:36.530Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -79,
+	"date": "2016-10-01T07:38:36.671Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -77,
+	"date": "2016-10-01T07:38:37.025Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -78,
+	"date": "2016-10-01T07:38:37.031Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"date": "2016-10-01T07:38:37.094Z"
+},
+{
 	"name": "KontaktApple",
 	"rssi": -54,
-	"date": "2016-10-01T07:06:54.109Z"
-}{
+	"date": "2016-10-01T07:38:37.243Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -81,
+	"date": "2016-10-01T07:38:37.377Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:37.443Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -53,
+	"date": "2016-10-01T07:38:37.600Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -75,
+	"date": "2016-10-01T07:38:37.729Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:37.800Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -52,
+	"date": "2016-10-01T07:38:37.950Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:38.156Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -47,
+	"date": "2016-10-01T07:38:38.307Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -80,
+	"date": "2016-10-01T07:38:38.444Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"date": "2016-10-01T07:38:38.514Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:38:38.868Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -54,
+	"date": "2016-10-01T07:38:39.020Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -77,
+	"date": "2016-10-01T07:38:39.155Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:38:39.227Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -51,
+	"date": "2016-10-01T07:38:39.374Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -77,
+	"date": "2016-10-01T07:38:39.513Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"date": "2016-10-01T07:38:39.579Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:38:39.585Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -46,
+	"date": "2016-10-01T07:38:39.727Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:39.937Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -54,
+	"date": "2016-10-01T07:38:40.083Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -83,
+	"date": "2016-10-01T07:38:40.237Z"
+},
+{
 	"name": "KontaktGoogle",
 	"rssi": -61,
-	"date": "2016-10-01T07:06:54.249Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -77,
-	"date": "2016-10-01T07:06:54.368Z"
-}{
+	"date": "2016-10-01T07:38:40.295Z"
+},
+{
 	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:06:54.462Z"
-}{
-	"name": "HTC BS 8081C9",
+	"rssi": -47,
+	"date": "2016-10-01T07:38:40.440Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"date": "2016-10-01T07:38:40.646Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -51,
+	"date": "2016-10-01T07:38:40.793Z"
+},
+{
+	"name": "Kontakt",
+	"rssi": -77,
+	"date": "2016-10-01T07:38:40.940Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"date": "2016-10-01T07:38:40.998Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"date": "2016-10-01T07:38:41.353Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -55,
+	"date": "2016-10-01T07:38:41.500Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"date": "2016-10-01T07:38:41.713Z"
+},
+{
+	"name": "KontaktApple",
+	"rssi": -47,
+	"date": "2016-10-01T07:38:41.854Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"date": "2016-10-01T07:38:42.061Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"date": "2016-10-01T07:38:42.414Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"date": "2016-10-01T07:39:29.592Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"date": "2016-10-01T07:39:30.303Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"date": "2016-10-01T07:39:30.654Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"date": "2016-10-01T07:39:30.660Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"date": "2016-10-01T07:39:31.007Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:39:31.358Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"date": "2016-10-01T07:39:32.073Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"date": "2016-10-01T07:39:32.425Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"date": "2016-10-01T07:39:32.780Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"date": "2016-10-01T07:39:33.133Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"date": "2016-10-01T07:39:33.483Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"date": "2016-10-01T07:39:33.839Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"date": "2016-10-01T07:39:34.195Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"date": "2016-10-01T07:39:34.908Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"date": "2016-10-01T07:39:35.269Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"date": "2016-10-01T07:39:35.618Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"date": "2016-10-01T07:39:35.978Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -69,
-	"date": "2016-10-01T07:06:54.678Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:06:54.815Z"
-}{
+	"date": "2016-10-01T07:39:37.394Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:54.961Z"
-}{
-	"name": "Kontakt",
-	"rssi": -80,
-	"date": "2016-10-01T07:06:55.112Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:55.173Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -78,
-	"date": "2016-10-01T07:06:55.182Z"
-}{
+	"rssi": -64,
+	"date": "2016-10-01T07:39:37.746Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:06:55.309Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -80,
-	"date": "2016-10-01T07:06:55.384Z"
-}{
-	"name": "Kontakt",
 	"rssi": -77,
-	"date": "2016-10-01T07:06:55.467Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:06:55.533Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -80,
-	"date": "2016-10-01T07:06:55.594Z"
-}{
+	"date": "2016-10-01T07:39:38.101Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:06:55.663Z"
-}{
-	"name": "Kontakt",
-	"rssi": -76,
-	"date": "2016-10-01T07:06:55.819Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -87,
-	"date": "2016-10-01T07:06:55.844Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:06:55.890Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:06:56.023Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:56.372Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -70,
-	"date": "2016-10-01T07:06:56.404Z"
-}{
-	"name": "Kontakt",
-	"rssi": -83,
-	"date": "2016-10-01T07:06:56.533Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:56.594Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -69,
-	"date": "2016-10-01T07:06:56.706Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:06:56.728Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:06:56.951Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:06:57.087Z"
-}{
-	"name": "Kontakt",
-	"rssi": -77,
-	"date": "2016-10-01T07:06:57.238Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:06:57.304Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -75,
-	"date": "2016-10-01T07:06:57.420Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:57.442Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:57.659Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:06:57.792Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -73,
-	"date": "2016-10-01T07:06:57.821Z"
-}{
-	"name": "Kontakt",
-	"rssi": -81,
-	"date": "2016-10-01T07:06:57.960Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:06:58.010Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -73,
-	"date": "2016-10-01T07:06:58.324Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:06:58.366Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:58.503Z"
-}{
-	"name": "Kontakt",
-	"rssi": -77,
-	"date": "2016-10-01T07:06:58.662Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:06:58.722Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -84,
-	"date": "2016-10-01T07:06:58.840Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -55,
-	"date": "2016-10-01T07:06:58.863Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -79,
-	"date": "2016-10-01T07:06:58.869Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:06:59.216Z"
-}{
-	"name": "Kontakt",
-	"rssi": -82,
-	"date": "2016-10-01T07:06:59.377Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -76,
-	"date": "2016-10-01T07:06:59.447Z"
-}{
-	"name": "Kontakt",
-	"rssi": -77,
-	"date": "2016-10-01T07:06:59.728Z"
-}{
-	"name": "HTC BS 8081C9",
 	"rssi": -72,
-	"date": "2016-10-01T07:06:59.749Z"
-}{
+	"date": "2016-10-01T07:39:38.454Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:06:59.931Z"
-}{
-	"name": "Kontakt",
-	"rssi": -81,
-	"date": "2016-10-01T07:07:00.078Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:00.142Z"
-}{
+	"rssi": -72,
+	"date": "2016-10-01T07:39:38.805Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:07:00.283Z"
-}{
-	"name": "Kontakt",
-	"rssi": -77,
-	"date": "2016-10-01T07:07:00.427Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -78,
-	"date": "2016-10-01T07:07:00.470Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:07:00.494Z"
-}{
+	"rssi": -66,
+	"date": "2016-10-01T07:39:39.155Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:07:00.632Z"
-}{
-	"name": "Kontakt",
-	"rssi": -77,
-	"date": "2016-10-01T07:07:00.780Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:07:00.844Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:07:00.988Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:07:01.337Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:01.559Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -83,
-	"date": "2016-10-01T07:07:01.583Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -58,
-	"date": "2016-10-01T07:07:01.696Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -60,
-	"date": "2016-10-01T07:07:02.051Z"
-}{
-	"name": "Kontakt",
-	"rssi": -78,
-	"date": "2016-10-01T07:07:02.200Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:02.272Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -77,
-	"date": "2016-10-01T07:07:02.295Z"
-}{
-	"name": "Kontakt",
-	"rssi": -83,
-	"date": "2016-10-01T07:07:02.559Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:07:02.625Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:02.765Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -77,
-	"date": "2016-10-01T07:07:02.807Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:03.121Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -77,
-	"date": "2016-10-01T07:07:03.318Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -58,
-	"date": "2016-10-01T07:07:03.330Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -56,
-	"date": "2016-10-01T07:07:03.477Z"
-}{
-	"name": "Kontakt",
-	"rssi": -82,
-	"date": "2016-10-01T07:07:03.616Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -75,
-	"date": "2016-10-01T07:07:03.620Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:03.691Z"
-}{
-	"name": "Kontakt",
-	"rssi": -89,
-	"date": "2016-10-01T07:07:03.974Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:07:04.045Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:04.185Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -54,
-	"date": "2016-10-01T07:07:04.405Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -75,
-	"date": "2016-10-01T07:07:04.738Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:04.758Z"
-}{
-	"name": "Kontakt",
-	"rssi": -86,
-	"date": "2016-10-01T07:07:05.044Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:05.113Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -76,
-	"date": "2016-10-01T07:07:05.149Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -60,
-	"date": "2016-10-01T07:07:05.248Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -76,
-	"date": "2016-10-01T07:07:05.453Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -84,
-	"date": "2016-10-01T07:07:05.517Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:05.824Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:05.963Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -76,
-	"date": "2016-10-01T07:07:06.168Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:06.178Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -56,
-	"date": "2016-10-01T07:07:06.316Z"
-}{
-	"name": "HTC BS 8081C9",
-	"rssi": -80,
-	"date": "2016-10-01T07:07:06.469Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -56,
-	"date": "2016-10-01T07:07:06.529Z"
-}{
-	"name": "KontaktGoogle",
-	"rssi": -59,
-	"date": "2016-10-01T07:07:06.669Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:06.882Z"
-}{
-	"name": "HTC BS 8081C9",
 	"rssi": -73,
-	"date": "2016-10-01T07:07:06.981Z"
-}{
-	"name": "KontaktApple",
+	"date": "2016-10-01T07:39:39.868Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"date": "2016-10-01T07:39:40.220Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"date": "2016-10-01T07:39:40.577Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"date": "2016-10-01T07:39:40.932Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"date": "2016-10-01T07:39:41.648Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"date": "2016-10-01T07:39:42.002Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"date": "2016-10-01T07:39:42.354Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"date": "2016-10-01T07:39:42.705Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"date": "2016-10-01T07:39:43.417Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -55,
-	"date": "2016-10-01T07:07:07.241Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -83,
-	"date": "2016-10-01T07:07:07.291Z"
-}{
+	"date": "2016-10-01T07:39:43.771Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:07.379Z"
-}{
-	"name": "KontaktApple",
+	"rssi": -79,
+	"date": "2016-10-01T07:39:44.836Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"date": "2016-10-01T07:39:45.900Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"date": "2016-10-01T07:39:45.906Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"date": "2016-10-01T07:39:46.255Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -58,
-	"date": "2016-10-01T07:07:07.595Z"
-}{
-	"name": "vívoactive\u0000",
-	"rssi": -84,
-	"date": "2016-10-01T07:07:07.695Z"
-}{
-	"name": "Kontakt",
-	"rssi": -80,
-	"date": "2016-10-01T07:07:07.880Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -59,
-	"date": "2016-10-01T07:07:07.951Z"
-}{
+	"date": "2016-10-01T07:39:46.610Z"
+},
+{
 	"name": "KontaktGoogle",
-	"rssi": -57,
-	"date": "2016-10-01T07:07:08.093Z"
-}{
-	"name": "Kontakt",
+	"rssi": -58,
+	"date": "2016-10-01T07:39:46.962Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"date": "2016-10-01T07:39:47.316Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"date": "2016-10-01T07:39:47.668Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"date": "2016-10-01T07:39:48.025Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"date": "2016-10-01T07:39:48.727Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"date": "2016-10-01T07:39:49.078Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"date": "2016-10-01T07:39:49.784Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"date": "2016-10-01T07:39:50.493Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"date": "2016-10-01T07:39:50.851Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"date": "2016-10-01T07:39:51.205Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"date": "2016-10-01T07:39:52.263Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -81,
-	"date": "2016-10-01T07:07:08.231Z"
-}{
-	"name": "HTC BS 8081C9",
+	"date": "2016-10-01T07:39:52.618Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"date": "2016-10-01T07:39:55.465Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"date": "2016-10-01T07:39:55.819Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"date": "2016-10-01T07:39:56.528Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"date": "2016-10-01T07:39:56.881Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -89,
+	"date": "2016-10-01T07:40:00.438Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"date": "2016-10-01T07:40:00.442Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"date": "2016-10-01T07:40:01.141Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"date": "2016-10-01T07:40:01.494Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"date": "2016-10-01T07:40:02.561Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"date": "2016-10-01T07:40:02.919Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -75,
-	"date": "2016-10-01T07:07:08.300Z"
-}{
+	"date": "2016-10-01T07:40:03.631Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"date": "2016-10-01T07:40:04.337Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"date": "2016-10-01T07:40:04.690Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -81,
+	"date": "2016-10-01T07:40:05.403Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"date": "2016-10-01T07:40:07.193Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"date": "2016-10-01T07:40:07.545Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"date": "2016-10-01T07:40:07.902Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"date": "2016-10-01T07:40:08.258Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"date": "2016-10-01T07:40:08.611Z"
+},
+{
 	"name": "KontaktGoogle",
 	"rssi": -58,
-	"date": "2016-10-01T07:07:08.449Z"
-}{
-	"name": "KontaktApple",
-	"rssi": -55,
-	"date": "2016-10-01T07:07:08.660Z"
-}{
+	"date": "2016-10-01T07:40:09.324Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"date": "2016-10-01T07:40:09.671Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"date": "2016-10-01T07:40:10.029Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"date": "2016-10-01T07:40:10.385Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"date": "2016-10-01T07:40:11.097Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"date": "2016-10-01T07:40:11.449Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"date": "2016-10-01T07:40:11.799Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"date": "2016-10-01T07:40:12.156Z"
+},
+{
 	"name": "KontaktGoogle",
 	"rssi": -59,
-	"date": "2016-10-01T07:07:08.807Z"
-}{
-	"name": "HTC BS 8081C9",
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:03.833Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:53:04.188Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:04.904Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:05.261Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:53:05.609Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:05.964Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:06.315Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:53:06.668Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:07.381Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:16.579Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:16.928Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 169561.50646997493,
+	"date": "2016-10-01T07:53:16.934Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:53:17.283Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:17.638Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 148284.71630413263,
+	"date": "2016-10-01T07:53:17.992Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:18.347Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:53:18.697Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 148284.71630413263,
+	"date": "2016-10-01T07:53:19.412Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:19.763Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:20.123Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:53:20.475Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:53:20.481Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:53:21.178Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 169561.50646997493,
+	"date": "2016-10-01T07:53:21.184Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:21.539Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:53:22.247Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:22.956Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:53:23.315Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:53:23.666Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 169561.50646997493,
+	"date": "2016-10-01T07:53:24.018Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:53:24.377Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 515587.8216763626,
+	"date": "2016-10-01T07:53:56.340Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:53:56.343Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 459148.2588771654,
+	"date": "2016-10-01T07:53:56.689Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:53:57.043Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:53:57.402Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:53:57.754Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:53:58.109Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:53:58.460Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 112591.45942257377,
+	"date": "2016-10-01T07:53:59.177Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2447522.99271103,
+	"date": "2016-10-01T07:53:59.528Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 97739.26083539063,
+	"date": "2016-10-01T07:53:59.886Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:54:00.235Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:01.310Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 898015.4335637216,
+	"date": "2016-10-01T07:54:01.667Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 646823.8205874304,
+	"date": "2016-10-01T07:54:02.018Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1362420.87982899,
+	"date": "2016-10-01T07:54:02.374Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:54:03.086Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 998772.3344773828,
+	"date": "2016-10-01T07:54:03.785Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 408163.82096996356,
+	"date": "2016-10-01T07:54:05.214Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:54:05.571Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:05.577Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:54:05.929Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 459148.2588771654,
+	"date": "2016-10-01T07:54:06.993Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:54:07.346Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:54:07.705Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:54:08.061Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:54:08.773Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:54:09.122Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:54:09.476Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:54:09.827Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 193447.31165086708,
+	"date": "2016-10-01T07:54:09.833Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:54:10.182Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:54:10.538Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 646823.8205874304,
+	"date": "2016-10-01T07:54:10.892Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 515587.8216763626,
+	"date": "2016-10-01T07:54:11.247Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 577971.4839317524,
+	"date": "2016-10-01T07:54:11.597Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:54:12.303Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 646823.8205874304,
+	"date": "2016-10-01T07:54:12.654Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 646823.8205874304,
+	"date": "2016-10-01T07:54:13.716Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 459148.2588771654,
+	"date": "2016-10-01T07:54:14.065Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 515587.8216763626,
+	"date": "2016-10-01T07:54:14.772Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 408163.82096996356,
+	"date": "2016-10-01T07:54:15.123Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:15.481Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1230165.987109037,
+	"date": "2016-10-01T07:54:16.184Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1230165.987109037,
+	"date": "2016-10-01T07:54:16.539Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"distance": 3533415.3324915343,
+	"date": "2016-10-01T07:54:16.893Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:54:17.601Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:17.953Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1506881.6469887174,
+	"date": "2016-10-01T07:54:18.307Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 998772.3344773828,
+	"date": "2016-10-01T07:54:19.019Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:19.370Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1506881.6469887174,
+	"date": "2016-10-01T07:54:19.377Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:19.725Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 806222.965447564,
+	"date": "2016-10-01T07:54:20.082Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1109228.0730718991,
+	"date": "2016-10-01T07:54:20.434Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 998772.3344773828,
+	"date": "2016-10-01T07:54:20.792Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1109228.0730718991,
+	"date": "2016-10-01T07:54:21.497Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 646823.8205874304,
+	"date": "2016-10-01T07:54:21.503Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 408163.82096996356,
+	"date": "2016-10-01T07:54:22.201Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 515587.8216763626,
+	"date": "2016-10-01T07:54:22.207Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 722707.0177912649,
+	"date": "2016-10-01T07:54:22.551Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 408163.82096996356,
+	"date": "2016-10-01T07:54:22.911Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 577971.4839317524,
+	"date": "2016-10-01T07:54:23.266Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 362179.20263164147,
+	"date": "2016-10-01T07:54:23.618Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 577971.4839317524,
+	"date": "2016-10-01T07:54:23.624Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:54:23.970Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 320770.9143041799,
+	"date": "2016-10-01T07:54:23.976Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 250137.85507612835,
+	"date": "2016-10-01T07:54:24.673Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 129370.37367100944,
+	"date": "2016-10-01T07:54:24.679Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 148284.71630413263,
+	"date": "2016-10-01T07:54:25.024Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 129370.37367100944,
+	"date": "2016-10-01T07:54:25.030Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 148284.71630413263,
+	"date": "2016-10-01T07:54:25.376Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 97739.26083539063,
+	"date": "2016-10-01T07:54:25.736Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 97739.26083539063,
+	"date": "2016-10-01T07:54:26.093Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 84622.18834741373,
+	"date": "2016-10-01T07:54:26.445Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 97739.26083539063,
+	"date": "2016-10-01T07:54:26.803Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 112591.45942257377,
+	"date": "2016-10-01T07:54:27.160Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 112591.45942257377,
+	"date": "2016-10-01T07:54:27.865Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 97739.26083539063,
+	"date": "2016-10-01T07:54:28.214Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 112591.45942257377,
+	"date": "2016-10-01T07:54:28.924Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 112591.45942257377,
+	"date": "2016-10-01T07:54:29.283Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 169561.50646997493,
+	"date": "2016-10-01T07:54:29.636Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 283545.50438090856,
+	"date": "2016-10-01T07:54:29.989Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 220209.5500210441,
+	"date": "2016-10-01T07:54:31.060Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:55:02.323Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:55:03.036Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:04.452Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:05.158Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:05.512Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:55:06.570Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:06.926Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:55:07.637Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:55:08.693Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:55:09.043Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:09.395Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:55:09.748Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:55:11.534Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 0.16956150646997492,
+	"date": "2016-10-01T07:55:11.891Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 0.16956150646997492,
+	"date": "2016-10-01T07:55:12.249Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:12.599Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:12.959Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:55:13.306Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:55:13.664Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 0.8980154335637216,
+	"date": "2016-10-01T07:55:14.372Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:14.727Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:55:15.086Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:15.439Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:15.796Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:17.212Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:17.567Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:17.923Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:55:18.631Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:55:19.339Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:55:20.404Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:20.765Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:21.120Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:21.125Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:55:21.478Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:55:21.834Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 0.8980154335637216,
+	"date": "2016-10-01T07:55:22.190Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:22.548Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:55:23.259Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:23.266Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:23.608Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:55:24.323Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:24.675Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:55:25.025Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:55:25.381Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:55:25.732Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:55:26.083Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -90,
+	"distance": 5.016623426294717,
+	"date": "2016-10-01T07:55:26.794Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -81,
+	"distance": 2.2266099241899213,
+	"date": "2016-10-01T07:55:27.860Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:55:29.284Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:55:29.994Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -81,
+	"distance": 2.2266099241899213,
+	"date": "2016-10-01T07:55:30.352Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:55:30.707Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:55:31.066Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:55:31.420Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:55:31.425Z"
+},
+{
+	"name": "KontaktGoogle",
 	"rssi": -83,
-	"date": "2016-10-01T07:07:08.811Z"
-}
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:55:32.828Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:55:34.603Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -89,
+	"distance": 4.602577737114027,
+	"date": "2016-10-01T07:55:34.960Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:55:35.318Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:55:35.672Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:55:37.095Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -90,
+	"distance": 5.016623426294717,
+	"date": "2016-10-01T07:55:37.803Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:55:38.156Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:55:38.509Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:55:39.570Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:40.988Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:55:41.346Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:55:42.053Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:55:42.407Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:42.760Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:55:43.114Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 0.12937037367100943,
+	"date": "2016-10-01T07:55:43.473Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:55:43.826Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:43.831Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:55:44.178Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:44.530Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:55:44.887Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:55:45.952Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:55:46.304Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:55:46.663Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:55:47.368Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -84,
+	"distance": 2.947202914414645,
+	"date": "2016-10-01T07:55:48.078Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 0.7227070177912649,
+	"date": "2016-10-01T07:55:48.430Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:55:49.136Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:55:49.489Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:55:49.845Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:55:50.199Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:50.554Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 0.3207709143041799,
+	"date": "2016-10-01T07:55:50.908Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:55:51.264Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:55:51.621Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:55:51.974Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 0.3207709143041799,
+	"date": "2016-10-01T07:55:52.333Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:55:53.040Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:55:53.395Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:53.750Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:55:54.109Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:55:54.115Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:54.462Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:55:54.822Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:55.174Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:55:55.180Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:55.527Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:55:55.533Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:55:55.882Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:55:56.604Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 0.12937037367100943,
+	"date": "2016-10-01T07:55:56.955Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:55:57.311Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:55:57.317Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 0.16956150646997492,
+	"date": "2016-10-01T07:55:57.666Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:55:58.018Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:55:58.372Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -47,
+	"distance": 0.03351341927804682,
+	"date": "2016-10-01T07:55:58.728Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:55:59.078Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:55:59.430Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:55:59.787Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -51,
+	"distance": 0.06290597596705849,
+	"date": "2016-10-01T07:56:00.506Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:00.857Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:01.208Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:56:01.561Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -51,
+	"distance": 0.06290597596705849,
+	"date": "2016-10-01T07:56:01.918Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:56:02.274Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:02.627Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:02.980Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -51,
+	"distance": 0.06290597596705849,
+	"date": "2016-10-01T07:56:03.333Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:56:03.684Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 0.12937037367100943,
+	"date": "2016-10-01T07:56:04.042Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:04.048Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:56:04.398Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 0.12937037367100943,
+	"date": "2016-10-01T07:56:05.115Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:05.469Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:56:05.823Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:06.173Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -47,
+	"distance": 0.03351341927804682,
+	"date": "2016-10-01T07:56:06.530Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -51,
+	"distance": 0.06290597596705849,
+	"date": "2016-10-01T07:56:06.880Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -47,
+	"distance": 0.03351341927804682,
+	"date": "2016-10-01T07:56:06.886Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:07.233Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -53,
+	"distance": 0.08462218834741372,
+	"date": "2016-10-01T07:56:07.589Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -46,
+	"distance": 0.02839305128704464,
+	"date": "2016-10-01T07:56:07.950Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:08.301Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:56:08.659Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:56:09.367Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:56:09.722Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:10.081Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:56:10.437Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:56:10.797Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:56:11.156Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:56:11.507Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:56:11.862Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -65,
+	"distance": 0.40816382096996356,
+	"date": "2016-10-01T07:56:12.220Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:56:12.576Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:56:12.935Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:56:13.295Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:56:14.002Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:56:15.056Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:56:15.773Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:56:16.122Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:56:16.483Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -68,
+	"distance": 0.5779714839317524,
+	"date": "2016-10-01T07:56:16.835Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:56:17.194Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 0.7227070177912649,
+	"date": "2016-10-01T07:56:17.550Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -81,
+	"distance": 2.2266099241899213,
+	"date": "2016-10-01T07:56:18.254Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:56:18.954Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:56:19.657Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:56:20.729Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:56:21.080Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1.2301659871090371,
+	"date": "2016-10-01T07:56:21.440Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:56:22.140Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:56:22.497Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1.2301659871090371,
+	"date": "2016-10-01T07:56:24.271Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:56:24.973Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -87,
+	"distance": 3.8628029666364263,
+	"date": "2016-10-01T07:56:25.690Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:56:26.042Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 0.8980154335637216,
+	"date": "2016-10-01T07:56:26.392Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:56:27.464Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:56:27.823Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 0.8980154335637216,
+	"date": "2016-10-01T07:56:28.181Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:56:29.239Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:56:29.592Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:56:30.306Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:56:31.376Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:56:31.729Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1.2301659871090371,
+	"date": "2016-10-01T07:56:32.448Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 0.3207709143041799,
+	"date": "2016-10-01T07:56:33.155Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:56:33.866Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -56,
+	"distance": 0.12937037367100943,
+	"date": "2016-10-01T07:56:34.225Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:34.581Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 0.16956150646997492,
+	"date": "2016-10-01T07:56:34.940Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:35.649Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:56:36.002Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -52,
+	"distance": 0.0730646491625486,
+	"date": "2016-10-01T07:56:36.355Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:56:36.714Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:37.070Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:37.424Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -54,
+	"distance": 0.09773926083539063,
+	"date": "2016-10-01T07:56:37.774Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -58,
+	"distance": 0.16956150646997492,
+	"date": "2016-10-01T07:56:38.130Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -55,
+	"distance": 0.11259145942257377,
+	"date": "2016-10-01T07:56:38.136Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:56:38.488Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -63,
+	"distance": 0.3207709143041799,
+	"date": "2016-10-01T07:56:38.846Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:39.200Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:39.550Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -61,
+	"distance": 0.25013785507612835,
+	"date": "2016-10-01T07:56:39.901Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:56:40.611Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -59,
+	"distance": 0.19344731165086707,
+	"date": "2016-10-01T07:56:42.039Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:56:42.397Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -60,
+	"distance": 0.2202095500210441,
+	"date": "2016-10-01T07:56:42.748Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -57,
+	"distance": 0.14828471630413262,
+	"date": "2016-10-01T07:56:43.108Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -64,
+	"distance": 0.3621792026316415,
+	"date": "2016-10-01T07:56:43.462Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -77,
+	"distance": 1.5068816469887174,
+	"date": "2016-10-01T07:56:44.530Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"distance": 3.5334153324915345,
+	"date": "2016-10-01T07:56:45.245Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:56:45.960Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -85,
+	"distance": 3.22874754121613,
+	"date": "2016-10-01T07:56:47.732Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -90,
+	"distance": 5.016623426294717,
+	"date": "2016-10-01T07:56:51.283Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"distance": 3.5334153324915345,
+	"date": "2016-10-01T07:56:52.705Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:56:53.057Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1.2301659871090371,
+	"date": "2016-10-01T07:56:53.410Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:56:54.477Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"distance": 3.5334153324915345,
+	"date": "2016-10-01T07:56:55.190Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:56:58.032Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:56:58.381Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -75,
+	"distance": 1.2301659871090371,
+	"date": "2016-10-01T07:56:59.086Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:56:59.439Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -85,
+	"distance": 3.22874754121613,
+	"date": "2016-10-01T07:57:01.224Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -78,
+	"distance": 1.664494000530568,
+	"date": "2016-10-01T07:57:01.946Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -86,
+	"distance": 3.5334153324915345,
+	"date": "2016-10-01T07:57:02.293Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -81,
+	"distance": 2.2266099241899213,
+	"date": "2016-10-01T07:57:02.646Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:57:03.357Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -87,
+	"distance": 3.8628029666364263,
+	"date": "2016-10-01T07:57:04.067Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -89,
+	"distance": 4.602577737114027,
+	"date": "2016-10-01T07:57:05.142Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -84,
+	"distance": 2.947202914414645,
+	"date": "2016-10-01T07:57:05.491Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:57:05.844Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -79,
+	"distance": 1.8362632910940035,
+	"date": "2016-10-01T07:57:07.617Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:57:08.330Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -83,
+	"distance": 2.6872708231817426,
+	"date": "2016-10-01T07:57:08.336Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -85,
+	"distance": 3.22874754121613,
+	"date": "2016-10-01T07:57:08.686Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -85,
+	"distance": 3.22874754121613,
+	"date": "2016-10-01T07:57:09.391Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:57:10.465Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -84,
+	"distance": 2.947202914414645,
+	"date": "2016-10-01T07:57:10.819Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -88,
+	"distance": 4.218596986610935,
+	"date": "2016-10-01T07:57:11.174Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -82,
+	"distance": 2.44752299271103,
+	"date": "2016-10-01T07:57:11.529Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:57:12.948Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -80,
+	"distance": 2.0232574316039376,
+	"date": "2016-10-01T07:57:13.305Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -73,
+	"distance": 0.9987723344773828,
+	"date": "2016-10-01T07:57:14.374Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -85,
+	"distance": 3.22874754121613,
+	"date": "2016-10-01T07:57:14.730Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -76,
+	"distance": 1.36242087982899,
+	"date": "2016-10-01T07:57:15.092Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -70,
+	"distance": 0.7227070177912649,
+	"date": "2016-10-01T07:57:15.444Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:57:15.793Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -62,
+	"distance": 0.2835455043809086,
+	"date": "2016-10-01T07:57:16.503Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -66,
+	"distance": 0.45914825887716537,
+	"date": "2016-10-01T07:57:16.855Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:57:17.206Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -67,
+	"distance": 0.5155878216763626,
+	"date": "2016-10-01T07:57:17.561Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -72,
+	"distance": 0.8980154335637216,
+	"date": "2016-10-01T07:57:17.912Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:57:18.629Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:57:18.981Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -74,
+	"distance": 1.109228073071899,
+	"date": "2016-10-01T07:57:19.695Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -69,
+	"distance": 0.6468238205874304,
+	"date": "2016-10-01T07:57:20.049Z"
+},
+{
+	"name": "KontaktGoogle",
+	"rssi": -71,
+	"distance": 0.806222965447564,
+	"date": "2016-10-01T07:57:20.055Z"
+},

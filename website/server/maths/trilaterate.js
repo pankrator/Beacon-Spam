@@ -175,7 +175,9 @@ var getLocation4ListenersExpectation = function(data, expectation) {
     return bestLocation;
 }
 
-demo = function () {
+module.exports = getLocation4Listeners;
+
+let demo = function () {
     let P1 = {x: 7, y: 7, z: 0};
     let P2 = {x: 12, y: 10, z: 0};
     let P3 = {x: 12, y: 7, z: 0};
@@ -222,4 +224,4 @@ demo = function () {
     console.log("location by 4 listener with expecation", getLocation4ListenersExpectation(data, {x: 7, y: 10}))
 }
 
-demo();
+// demo();

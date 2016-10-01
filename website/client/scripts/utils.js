@@ -50,6 +50,18 @@ const MathHelpers = {
     min: (array) => array.reduce((previous, element) => Math.min(previous, element), array[0]),
     max: (array) => array.reduce((previous, element) => Math.max(previous, element), array[0]),
     sum: (array) => array.reduce((previous, element) => previous + element, 0),
+    argmin: (array, transform) => {
+        let minElementIndex = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (transform(array[i]) < transform(array[minElementIndex])) {
+                minElementIndex = i;
+            }
+        }
+        return array[minElementIndex];
+    },
+    count: (array, element) => {
+        return array.reduce((count, value) => count += value == element, 0);
+    }
 };
 
 module.exports = {

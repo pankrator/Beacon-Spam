@@ -19,7 +19,7 @@ MapRenderer.prototype.initForMap = function (mapData) {
 
 MapRenderer.prototype._renderMap = function () {
     const canvas = this._context.canvas;
-    this._context.clearRect(0, 0, canvas.width, canvas.height);
+    this._context.clearRect(0, 0, this._map.roomDimensions.width, this._map.roomDimensions.height);
     this._context.strokeStyle = "black";
 
     for (const place of this._map.places) {
@@ -35,6 +35,32 @@ MapRenderer.prototype._renderMap = function () {
         this._context.fillStyle = "black";
         this._context.font = ~~relativeArea + "px Calibri";
         this._context.fillText(place.name, minX, minY);
+    }
+
+    for (const listenerId in this._map.listeners) {
+        const listener = this._map.listeners[listenerId];
+        // Draw the listener as a circle
+        this._context.beginPath();
+        // Draw the listener as a circle whose radius is small percentage of the room's dimensions
+        const roomBiggerDimension = Math.max(this._map.roomDimensions.width, this._map.roomDimensions.height);;
+        const listenerSmallRadius = 0.02 * roomBiggerDimension;
+        this._context.arc(listener.location.x, listener.location.y, listenerSmallRadius, 0, 2 * Math.PI);
+        this._context.closePath();
+        this._context.fillStyle = "#AAA";
+        this._context.fill();
+        // Draw the listener's range
+        this._context.beginPath();
+        this._context.arc(listener.location.x, listener.location.y, listener.range, 0, 2 * Math.PI);
+        this._context.closePath();
+        this._context.strokeStyle = "black";
+        this._context.lineWidth = 4;
+        this._context.save();
+        this._context.globalAlpha = 0.5;
+        this._context.stroke();
+        this._context.fillStyle = "#AAA";
+        this._context.globalAlpha = 0.3;
+        this._context.fill();
+        this._contex.restore();
     }
 };
 

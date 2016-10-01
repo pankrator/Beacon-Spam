@@ -1,6 +1,16 @@
+"use strict";
+
+const Charter = require("./charter");
 const MapRenderer = require("./maprenderer");
-const Tracker = require("./tracker");
+const SampleStatistician = require("./sample_statistician");
 const Utils = require("./utils");
+
+function timespanFromTime(hours, minutes, seconds, milliseconds) {
+    minutes += hours * 60;
+    seconds += minutes * 60;
+    milliseconds += seconds * 1000;
+    return milliseconds;
+};
 
 function main() {
     let mapPromise = Utils.loadJSON("data/map.json", "GET", "");
@@ -15,11 +25,33 @@ function main() {
         };
         renderFrame();
     });
-    let tracker = new Tracker(10);
+    let statistician = new SampleStatistician();
+    let tracker = statistician.registerTracker();
     renderer.registerTracker(tracker);
-    setInterval(() =>
-        tracker.addSample(Math.random() * canvas.width,
-                          Math.random() * canvas.height),
-        100);
+
+    let chartCanvas = document.getElementById("chart-canvas");
+    let charter = new Charter(chartCanvas.getContext("2d"));
+    mapPromise.done(mapData => {
+        charter.initForMap(mapData);
+        setInterval(() =>
+            tracker.addSample(Math.random() * mapData.roomDimensions.width,
+                            Math.random() * mapData.roomDimensions.height),
+            10);
+    });
+    // Wait for the tracker to put gather some data
+
+    setTimeout(() => {
+        const from = Date.now() - timespanFromTime(0, 0, 0, 500);
+        const to = Date.now();
+        const timespanToSplitOver = timespanFromTime(0, 0, 0, 100);
+       // charter.chartMostVisited(statistician.getTrackers(), from, to, timespanToSplitOver);
+    }, 2000);
+
+    setTimeout(() => {
+        const from = Date.now() - timespanFromTime(0, 0, 0, 1000);
+        const to = Date.now();
+        const timespanToSplitOver = timespanFromTime(0, 0, 0, 200);
+        charter.chartPlaceLoadOverTime(statistician.getTrackers(), charter._map.places[0], from, to, timespanToSplitOver);
+    }, 2000);
 };
 main();

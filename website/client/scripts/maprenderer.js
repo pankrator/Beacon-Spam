@@ -17,7 +17,7 @@ MapRenderer.prototype.initForMap = function (mapData) {
     }
 };
 
-MapRenderer.prototype.renderMap = function () {
+MapRenderer.prototype._renderMap = function () {
     const canvas = this._context.canvas;
     this._context.clearRect(0, 0, canvas.width, canvas.height);
     this._context.strokeStyle = "black";
@@ -38,7 +38,7 @@ MapRenderer.prototype.renderMap = function () {
     }
 };
 
-MapRenderer.prototype.renderTrackers = function () {
+MapRenderer.prototype._renderTrackers = function () {
     for (const tracker of this._trackers) {
         if (tracker.samples.length === 0) {
             continue;

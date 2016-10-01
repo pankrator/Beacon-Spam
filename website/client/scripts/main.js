@@ -10,8 +10,7 @@ function main() {
     mapPromise.done(mapData => {
         renderer.initForMap(mapData);
         const renderFrame = function () {
-            renderer.renderMap();
-            renderer.renderTrackers();
+            renderer.renderFrame();
             requestAnimationFrame(renderFrame);
         };
         renderFrame();

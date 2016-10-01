@@ -37,20 +37,20 @@ MapRenderer.prototype._renderMap = function () {
         this._context.fillText(place.name, minX, minY);
     }
 
-    for (const beaconId in this._map.beacons) {
-        const beacon = this._map.beacons[beaconId];
-        // Draw the beacon as a circle
+    for (const listenerId in this._map.listeners) {
+        const listener = this._map.listeners[listenerId];
+        // Draw the listener as a circle
         this._context.beginPath();
-        // Draw the beacon as a circle whose radius is small percentage of the room's dimensions
+        // Draw the listener as a circle whose radius is small percentage of the room's dimensions
         const roomBiggerDimension = Math.max(this._map.roomDimensions.width, this._map.roomDimensions.height);;
-        const beaconSmallRadius = 0.02 * roomBiggerDimension;
-        this._context.arc(beacon.location.x, beacon.location.y, beaconSmallRadius, 0, 2 * Math.PI);
+        const listenerSmallRadius = 0.02 * roomBiggerDimension;
+        this._context.arc(listener.location.x, listener.location.y, listenerSmallRadius, 0, 2 * Math.PI);
         this._context.closePath();
         this._context.fillStyle = "#AAA";
         this._context.fill();
-        // Draw the beacon's range
+        // Draw the listener's range
         this._context.beginPath();
-        this._context.arc(beacon.location.x, beacon.location.y, beacon.range, 0, 2 * Math.PI);
+        this._context.arc(listener.location.x, listener.location.y, listener.range, 0, 2 * Math.PI);
         this._context.closePath();
         this._context.strokeStyle = "black";
         this._context.lineWidth = 4;

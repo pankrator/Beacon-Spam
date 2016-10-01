@@ -24,11 +24,32 @@
             }],
         }
     ],
-    beacons: {
+    listeners: {
         Beacon_Alcohol: {
             location: {
-                x: 825,
-                y: 775
+                x: 30,
+                y: 30
+            },
+            range: 100
+        },
+        Beacon_Bakery: {
+            location: {
+                x: 30,
+                y: 100
+            },
+            range: 100
+        },
+        Beacon_Test: {
+            location: {
+                x: 60,
+                y: 100
+            },
+            range: 100
+        },
+        Beacon_Babyfood: {
+            location: {
+                x: 60,
+                y: 100
             },
             range: 100
         }

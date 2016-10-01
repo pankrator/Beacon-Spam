@@ -177,7 +177,7 @@ var getLocation4ListenersExpectation = function(data, expectation) {
 
 module.exports = getLocation4Listeners;
 
-demo = function () {
+let demo = function () {
     let P1 = {x: 7, y: 7, z: 0};
     let P2 = {x: 12, y: 10, z: 0};
     let P3 = {x: 12, y: 7, z: 0};

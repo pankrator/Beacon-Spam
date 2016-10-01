@@ -6,10 +6,10 @@
  *  txPower: ....
  * }]
  */
-module.exports = function(measurements) {
+module.exports = function(measurements, txPower) {
     measurements = filterOutliers(measurements);
 
-    let sum = measurements.reduce((a, b) => a + calculateDistance(b.rssi, b.txPower), 0);
+    let sum = measurements.reduce((a, b) => a + calculateDistance(b.rssi, txPower), 0);
     let average = sum / measurements.length;
 
     return average;

@@ -5,25 +5,25 @@ module.exports = {
      * {
      *  listernerId: ...,
      *  id: ....,
-     *  name: ...,
-     *  txPower: ....,
-     *  samples: [{rssi: ...., timestamp: .....}, ....],
-     *  distanceToListener: ...
+     *  txPower: ...,
+     *  samples: [{rssi: ..., timestamp: ...}, ...]
+     *  
      * }
      */
     rawData: [],
 
     /**
      * {
-     *  id: ....,
-     *  name: ...,
-     *  samples: [{x:..., y:..., timestamp:...}, ....]
-     * }
+     *  timestamp: ...,
+     *  beaconPositions: {
+     *      "beaconId": {x: Number, y: Number }
+     *      "beaconId2": {x: Number, y: Number }
+     *  }
      */
     calculatedData: [],
 
     /**
-     * Keeps track of which data is already sent to clients
+     * Keeps track of which data is already sent to which client
      */
     alreadySent: {},
 

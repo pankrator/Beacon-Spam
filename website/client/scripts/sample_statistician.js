@@ -1,5 +1,6 @@
 "use strict";
 const Utils = require("./utils");
+const _ = require("lodash");
 
 function SampleStatistician() {
     this._trackers = [];
@@ -15,15 +16,18 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 };
 
 SampleStatistician.prototype.updateTrackers = function () {
-    return Utils.loadJSON("/beacon", "GET").done((data) => {
-        // this._trackers.sort((a, b) => { return a.id.localeCompare(b.id)});
-        data.forEach(function(beacon) {
-            var el = _.find(this._trackers, { id: beacon.id});
-            if (el) {
-                el.samples = el.samples.concat(beacon.samples);
-            } else {
-                this._trackers.push(new Tracker(Infinity, beacon.id, beacon.samples));
+    return Utils.loadJSON("/beacon", "GET").done((beaconPositionInTime) => {
+        beaconPositionInTime.forEach(function(beaconsPosition) {
+            for (let beaconId in beaconsPosition) {
+                let el = _.find(this._trackers, { id: beaconId});
+                if (el) {
+                    beaconsPosition[beaconId].timestamp = beaconsPosition.timestamp;
+                    el.samples.push(beaconsPosition[beaconId]);
+                } else {
+                    this._trackers.push(new Tracker(Infinity, beacon.id, [beaconsPosition[beaconId]]));
+                }
             }
+
         });
     });
 };

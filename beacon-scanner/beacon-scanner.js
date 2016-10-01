@@ -1,7 +1,11 @@
+const fs = require('fs');
+
 const noble = require('noble');
+const jsonfile = require('jsonfile');
 
 const RSSI_THRESHOLD = -90;
 const EXIT_GRACE_PERIOD = 200; // milliseconds
+const FILENAME = './data.json';
 
 var inRange = [];
 
@@ -17,6 +21,14 @@ noble.on('discover', function(peripheral) {
         inRange[id] = {
             peripheral: peripheral
         };
+
+        var beaconData = JSON.stringify({
+          name: peripheral.advertisement.localName,
+          rssi: peripheral.rssi,
+          date: new Date()
+        }, null, '\t');
+
+        fs.appendFile(FILENAME, beaconData);
 
         console.log('"' + peripheral.advertisement.localName + '" entered (RSSI ' + peripheral.rssi + ') ' + new Date());
     }

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pankrator/Beacon-Spam#readme",
   "dependencies": {
+    "jsonfile": "^2.4.0",
     "noble": "^1.7.0"
   }
 }

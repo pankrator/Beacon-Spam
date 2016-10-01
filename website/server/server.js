@@ -6,6 +6,7 @@ let Q = require("q");
 let express = require("express");
 let bodyParser = require("body-parser");
 let restify = require("restify");
+let beaconBlackboard = require('./beacon_blackboard');
 
 function Server() {
     Q.longStackSupport = true;
@@ -38,6 +39,7 @@ let handleBeaconInfo = function (req, res) {
         txPower: req.body.txPower,
         samples: req.body.samples
     }
+    beaconBlackboard.add(beaconData);
     res.send();
 }
 

@@ -1,7 +1,15 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
   <StackLayout>
-    <Label text="Tap the button" class="title"/>
-    <Button text="TAP" tap="{{ onTap }}" />
-    <Label text="{{ message }}" class="message" textWrap="true"/>
+    <Label text="ListenerId" class="message" textWrap="true"/>
+    <TextView text="{{ listenerId }}" />
+
+    <Label text="txPower" class="message" textWrap="true"/>
+    <TextView text="{{ txPower }}" />
+
+    <Label text="ServerUrl" class="message" textWrap="true"/>
+    <TextView text="{{ serverUrl }}" />
+
+    <Button text="Submit" tap="{{onSubmit}}"/>
+    
   </StackLayout>
 </Page>

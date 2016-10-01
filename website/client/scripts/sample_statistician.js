@@ -15,7 +15,7 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 };
 
 SampleStatistician.prototype.updateTrackers = function () {
-
+    return Utils.loadJSON(/* Load trackers here*/);
 };
 
 // Taken from stackoverflow; not actual guid http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript

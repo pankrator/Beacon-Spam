@@ -1,5 +1,7 @@
+"use strict";
+
 const MapRenderer = require("./maprenderer");
-const Tracker = require("./tracker");
+const SampleStatistician = require("./sample_statistician");
 const Utils = require("./utils");
 
 function main() {
@@ -15,7 +17,8 @@ function main() {
         };
         renderFrame();
     });
-    let tracker = new Tracker(10);
+    let statistician = new SampleStatistician();
+    let tracker = statistician.registerTracker();
     renderer.registerTracker(tracker);
     setInterval(() =>
         tracker.addSample(Math.random() * canvas.width,

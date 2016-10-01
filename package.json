@@ -1,0 +1,22 @@
+{
+  "name": "beacon-spam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "beacon-scanner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankrator/Beacon-Spam.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pankrator/Beacon-Spam/issues"
+  },
+  "homepage": "https://github.com/pankrator/Beacon-Spam#readme",
+  "dependencies": {
+    "noble": "^1.7.0"
+  }
+}

@@ -24,15 +24,15 @@
             }],
         }
     ],
-    beacons: [
-        {
-            name: "Beacon_Alcohol",
+    beacons: {
+        Beacon_Alcohol: {
             location: {
-                x: 30,
-                y: 30
-            }
+                x: 825,
+                y: 775
+            },
+            range: 100
         }
-    ],
+    },
     roomDimensions: {
         width: 1000,
         height: 1000,

@@ -6,7 +6,7 @@ function SampleStatistician() {
 };
 
 SampleStatistician.prototype.registerTracker = function (tracker) {
-    this._trackers.push(new Tracker(10));
+    this._trackers.push(new Tracker(1e4));
     return this._trackers[this._trackers.length - 1];
 };
 
@@ -51,7 +51,7 @@ function Tracker(sampleCount, id, samples) {
 };
 
 Tracker.prototype.addSample = function (sampleX, sampleY) {
-    this.samples.push({ x: sampleX, y: sampleY});
+    this.samples.push({ x: sampleX, y: sampleY, timestamp: Date.now()});
     if (this.samples.length >= this._maxSampleCount) {
         this.samples.shift();
     }

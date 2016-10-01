@@ -36,6 +36,32 @@ MapRenderer.prototype._renderMap = function () {
         this._context.font = ~~relativeArea + "px Calibri";
         this._context.fillText(place.name, minX, minY);
     }
+
+    for (const beaconId in this._map.beacons) {
+        const beacon = this._map.beacons[beaconId];
+        // Draw the beacon as a circle
+        this._context.beginPath();
+        // Draw the beacon as a circle whose radius is small percentage of the room's dimensions
+        const roomBiggerDimension = Math.max(this._map.roomDimensions.width, this._map.roomDimensions.height);;
+        const beaconSmallRadius = 0.02 * roomBiggerDimension;
+        this._context.arc(beacon.location.x, beacon.location.y, beaconSmallRadius, 0, 2 * Math.PI);
+        this._context.closePath();
+        this._context.fillStyle = "#AAA";
+        this._context.fill();
+        // Draw the beacon's range
+        this._context.beginPath();
+        this._context.arc(beacon.location.x, beacon.location.y, beacon.range, 0, 2 * Math.PI);
+        this._context.closePath();
+        this._context.strokeStyle = "black";
+        this._context.lineWidth = 4;
+        this._context.save();
+        this._context.globalAlpha = 0.5;
+        this._context.stroke();
+        this._context.fillStyle = "#AAA";
+        this._context.globalAlpha = 0.3;
+        this._context.fill();
+        this._contex.restore();
+    }
 };
 
 MapRenderer.prototype._renderTrackers = function () {

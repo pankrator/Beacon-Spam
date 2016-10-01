@@ -5,6 +5,13 @@ const MapRenderer = require("./maprenderer");
 const SampleStatistician = require("./sample_statistician");
 const Utils = require("./utils");
 
+function timespanFromTime(hours, minutes, seconds, milliseconds) {
+    minutes += hours * 60;
+    seconds += minutes * 60;
+    milliseconds += seconds * 1000;
+    return milliseconds;
+};
+
 function main() {
     let mapPromise = Utils.loadJSON("data/map.json", "GET", "");
     let canvas = document.getElementById("map-canvas");
@@ -29,10 +36,22 @@ function main() {
         setInterval(() =>
             tracker.addSample(Math.random() * mapData.roomDimensions.width,
                             Math.random() * mapData.roomDimensions.height),
-            100);
+            10);
     });
     // Wait for the tracker to put gather some data
-    setTimeout(() =>
-        charter.chartMostVisited(statistician.getTrackers(), "Most visited places"), 2000);
+
+    setTimeout(() => {
+        const from = Date.now() - timespanFromTime(0, 0, 0, 500);
+        const to = Date.now();
+        const timespanToSplitOver = timespanFromTime(0, 0, 0, 100);
+       // charter.chartMostVisited(statistician.getTrackers(), from, to, timespanToSplitOver);
+    }, 2000);
+
+    setTimeout(() => {
+        const from = Date.now() - timespanFromTime(0, 0, 0, 1000);
+        const to = Date.now();
+        const timespanToSplitOver = timespanFromTime(0, 0, 0, 200);
+        charter.chartPlaceLoadOverTime(statistician.getTrackers(), charter._map.places[0], from, to, timespanToSplitOver);
+    }, 2000);
 };
 main();

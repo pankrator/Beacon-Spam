@@ -23,7 +23,27 @@ Server.prototype.listen = function() {
     this.app.listen(8080);
 };
 
+let handleBeaconInfo = function (req, res) {
+    /**
+     * {
+     *  id: ....,
+     *  name: ...,
+     *  txPower: ....,
+     *  samples: [{rssi: ...., timestamp: .....}]
+     * }
+     */
+    var beaconData = {
+        id: req.body.id,
+        name: req.body.name,
+        txPower: req.body.txPower,
+        samples: req.body.samples
+    }
+    res.send();
+}
+
 Server.prototype.__setupRouting = function () {
+    this.app.post("/beacon/data", handleBeaconInfo);
+
     // Static files are added last as they match every request
     this.app.get(".*", restify.serveStatic({
         directory: "client/",

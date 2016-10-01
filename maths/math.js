@@ -1,3 +1,5 @@
+'use strict';
+
 let vector = require('./vector');
 
 /**
@@ -10,43 +12,43 @@ let vector = require('./vector');
 * Formula is taken from https://en.wikipedia.org/wiki/Trilateration
 **/
 var trilaterateAlgo = function(p1, p2, p3, r1, r2, r3) {
-	let x, y;
+    let x, y;
 
-	// Make the important check for distance between first two spheres!!
+    // Make the important check for distance between first two spheres!!
 
-	// x = (r1^2 - r2^2 + d^2) / 2*d
-	x = ((r1 * r1) - (r2 * r2) + (p2.x * p2.x)) / (2 * p2.x);
+    // x = (r1^2 - r2^2 + d^2) / 2*d
+    x = ((r1 * r1) - (r2 * r2) + (p2.x * p2.x)) / (2 * p2.x);
 
-	// y = ((r1^2 - r3^2 + i^2 + j^2) / 2*j) - (i/j) * x
-	
-	y  = (((r1 * r1) - (r3 * r3) + (p3.x * p3.x) + (p3.y * p3.y)) / (2 * p3.y)) - (p3.x/p3.y) * x;
+    // y = ((r1^2 - r3^2 + i^2 + j^2) / 2*j) - (i/j) * x
+    
+    y  = (((r1 * r1) - (r3 * r3) + (p3.x * p3.x) + (p3.y * p3.y)) / (2 * p3.y)) - (p3.x/p3.y) * x;
 
-	// z1 = +sqrt(r1*r1 - x*x - y*y);
-	// z2 = -sqrt(r1*r1 - x*x - y*y);
-	let D = r1*r1 - x*x - y*y;
+    // z1 = +sqrt(r1*r1 - x*x - y*y);
+    // z2 = -sqrt(r1*r1 - x*x - y*y);
+    let D = r1*r1 - x*x - y*y;
 
-	x += p1.x;
-	y += p1.y;
-	// console.log("x=", x, "y=", y, "z=", D);
+    x += p1.x;
+    y += p1.y;
+    // console.log("x=", x, "y=", y, "z=", D);
 
-	return {x: x, y: y};
-	// if (D < 0) {
-	// 	return null;
-	// } else if (D == 0) {
-	// 	return [{x: x, y: y, z: p1.z}];
-	// } else if (D > 0) {
-	// 	let z = Math.sqrt(D);
-	// 	return [{x: x, y: y, z: z + p1.z},
-	// 			{x: x, y: y, z: -z + p1.z}];
-	// }
+    return {x: x, y: y};
+    // if (D < 0) {
+    //     return null;
+    // } else if (D == 0) {
+    //     return [{x: x, y: y, z: p1.z}];
+    // } else if (D > 0) {
+    //     let z = Math.sqrt(D);
+    //     return [{x: x, y: y, z: z + p1.z},
+    //             {x: x, y: y, z: -z + p1.z}];
+    // }
 }
 
 var pointSubtract = function(p1, p2) {
-	return {
-		x: p1.x - p2.x,
-		y: p1.y - p2.y,
-		z: p1.z - p2.z
-	}
+    return {
+        x: p1.x - p2.x,
+        y: p1.y - p2.y,
+        z: p1.z - p2.z
+    }
 }
 
 var dist = function(p1, p2) {
@@ -56,17 +58,17 @@ var dist = function(p1, p2) {
 
 // two of the centers shuold have the same Y coord
 var trilaterate = function (p1, p2, p3, r1, r2, r3) {
-	if(p1.y == p2.y) {
-		return trilaterateAlgo(p1, pointSubtract(p2, p1), pointSubtract(p3, p1), r1, r2, r3);
-	}
+    if(p1.y == p2.y) {
+        return trilaterateAlgo(p1, pointSubtract(p2, p1), pointSubtract(p3, p1), r1, r2, r3);
+    }
 
-	if(p2.y == p3.y) {
-		return trilaterateAlgo(p2, pointSubtract(p3, p2), pointSubtract(p1, p2), r2, r3, r1);
-	}
+    if(p2.y == p3.y) {
+        return trilaterateAlgo(p2, pointSubtract(p3, p2), pointSubtract(p1, p2), r2, r3, r1);
+    }
 
-	if(p3.y == p1.y) {
-		return trilaterateAlgo(p3, pointSubtract(p1, p3), pointSubtract(p2, p3), r3, r1, r2);
-	}
+    if(p3.y == p1.y) {
+        return trilaterateAlgo(p3, pointSubtract(p1, p3), pointSubtract(p2, p3), r3, r1, r2);
+    }
 }
 
 var getLocation4Listeners = function(data) {

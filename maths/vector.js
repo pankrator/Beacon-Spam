@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function Vector(x, y) {
     this.x = x || 0;
@@ -96,7 +96,7 @@ Vector.prototype = {
         return this;
     },
     toString: function () {
-        return "(" + this.x + ", " + this.y + ")";
+        return '(' + this.x + ', ' + this.y + ')';
     }
 };
 

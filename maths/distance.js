@@ -1,11 +1,11 @@
 'use strict';
 
-module.exports = function calculateAverageDistance(measurements) {
+module.exports = function(measurements) {
     measurements = filterOutliers(measurements);
-    
-    let sum = measurements.reduce((a, b) => a + calculateDistance(b.rssi, b.txPower), 0);    
+
+    let sum = measurements.reduce((a, b) => a + calculateDistance(b.rssi, b.txPower), 0);
     let average = sum / measurements.length;
-    
+
     return average;
 };
 
@@ -13,7 +13,7 @@ function filterOutliers(measurements) {
     measurements.sort((m1, m2) => m1.rssi - m2.rssi);
     measurements.pop();
     measurements.shift();
-    
+
     return measurements;
 }
 
@@ -32,7 +32,7 @@ function calculateDistance(rssi, txPower) {
   } else {
       factor = 0.89976;
   }
-  
+
 
   let ratio = rssi / txPower;
 

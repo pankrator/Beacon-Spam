@@ -10,13 +10,13 @@ let restify = require("restify");
 function Server() {
     Q.longStackSupport = true;
     this.__setup();
-}
+};
 
 Server.prototype.__setup = function () {
     this.app = restify.createServer({ name: "BeaconSpam" });
     this.app.use(bodyParser.json());
     this.__setupRouting();
-}
+};
 
 Server.prototype.listen = function() {
     console.log("Server started!");

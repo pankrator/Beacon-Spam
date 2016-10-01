@@ -15,7 +15,17 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 };
 
 SampleStatistician.prototype.updateTrackers = function () {
-    return Utils.loadJSON(/* Load trackers here*/);
+    return Utils.loadJSON("/beacon", "GET").done((data) => {
+        // this._trackers.sort((a, b) => { return a.id.localeCompare(b.id)});
+        data.forEach(function(beacon) {
+            var el = _.find(this._trackers, { id: beacon.id});
+            if (el) {
+                el.samples = el.samples.concat(beacon.samples);
+            } else {
+                this._trackers.push(new Tracker(Infinity, beacon.id, beacon.samples));
+            }
+        });
+    });
 };
 
 // Taken from stackoverflow; not actual guid http://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
@@ -29,10 +39,10 @@ function guid() {
     s4() + '-' + s4() + s4() + s4();
 };
 
-function Tracker(sampleCount) {
+function Tracker(sampleCount, id, samples) {
     this._maxSampleCount = sampleCount;
-    this.id = guid();
-    this.samples = [];
+    this.id = id || guid();
+    this.samples = samples || [];
     this.color = Utils.randomColor();
 };
 

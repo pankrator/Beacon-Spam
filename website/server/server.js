@@ -4,6 +4,7 @@ let path = require("path");
 
 let Q = require("q");
 let express = require("express");
+var session = require('express-session');
 let bodyParser = require("body-parser");
 let restify = require("restify");
 let beaconBlackboard = require('./beacon_blackboard');
@@ -16,6 +17,11 @@ function Server() {
 Server.prototype.__setup = function () {
     this.app = restify.createServer({ name: "BeaconSpam" });
     this.app.use(bodyParser.json());
+    this.app.use(session({
+        secret: "beacon&spam",
+        resave: false,
+        saveUninitialized: true
+    }));
     this.__setupRouting();
 };
 
@@ -43,8 +49,17 @@ let handleBeaconInfo = function (req, res) {
     res.send();
 }
 
+let sendBeaconData = function (req, res) {
+    var alreadySent = beaconBlackboard.alreadySent[req.session.id] || 0;
+    var data = beaconBlackboard.calculatedData.slice(alreadySent);
+    beaconBlackboard.alreadySent[req.session.id] = Math.max(beaconBlackboard.calculatedData.length - 1, 0);
+    // data.sort((a, b) => { return a.id.localeCompareb(b.id); });
+    res.send(data);
+}
+
 Server.prototype.__setupRouting = function () {
     this.app.post("/beacon/data", handleBeaconInfo);
+    this.app.get("/beacon", sendBeaconData);
 
     // Static files are added last as they match every request
     this.app.get(".*", restify.serveStatic({

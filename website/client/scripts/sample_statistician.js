@@ -16,7 +16,9 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 };
 
 SampleStatistician.prototype.updateTrackers = function () {
+    window.s = this;
     return Utils.loadJSON("/beacon", "GET").done((beaconPositionInTime) => {
+        // console.log('data has come!', beaconPositionInTime);
         beaconPositionInTime.forEach(function(beaconsPosition) {
             for (let beaconId in beaconsPosition) {
                 let el = _.find(this._trackers, { id: beaconId});

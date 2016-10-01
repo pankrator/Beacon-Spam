@@ -1,0 +1,10 @@
+{
+  "name": "DataGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}

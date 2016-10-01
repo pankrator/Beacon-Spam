@@ -47,7 +47,7 @@ let handleBeaconInfo = function (req, res) {
      *  }
      * }
      */
-    console.log('received', req.body.listenerId, new Date(req.body.beacon.samples[0].timestamp).toTimeString());
+    console.log('received', req.body.listenerId, new Date(req.body.beacon.samples[0].timestamp).toTimeString(), beaconBlackboard.rawData.length);
     // console.log('received', req.body.listenerId);
     var beaconData = {
         listernerId: req.body.listenerId,
@@ -61,10 +61,11 @@ let handleBeaconInfo = function (req, res) {
 }
 
 let sendBeaconData = function (req, res) {
+    console.log(req.session.id, "requested beacon data");
     var alreadySent = beaconBlackboard.alreadySent[req.session.id] || 0;
     var data = beaconBlackboard.calculatedData.slice(alreadySent);
     beaconBlackboard.alreadySent[req.session.id] = Math.max(beaconBlackboard.calculatedData.length - 1, 0);
-
+    console.log('sent', data.length, beaconBlackboard.calculatedData.length);
     res.send(data);
 }
 

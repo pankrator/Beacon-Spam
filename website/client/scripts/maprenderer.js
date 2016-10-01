@@ -60,7 +60,7 @@ MapRenderer.prototype._renderMap = function () {
         this._context.fillStyle = "#AAA";
         this._context.globalAlpha = 0.3;
         this._context.fill();
-        this._contex.restore();
+        this._context.restore();
     }
 };
 

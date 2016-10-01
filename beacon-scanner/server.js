@@ -4,8 +4,9 @@ const request = require('request');
 const noble = require('noble');
 const jsonfile = require('jsonfile');
 
-const url = 'http://127.0.0.1:8080';
-const BATCH_SIZE = 10;
+const URL = 'http://10.255.255.16:8080/beacon/data';
+const BATCH_SIZE = 3;
+const LISTENER_ID = 'Beacon_Babyfood';
 
 let beacons = new Map();
 
@@ -58,14 +59,19 @@ function addSample(device) {
 
 function sendSamples(beacon) {
   return new Promise((resolve, reject) => {
-    let json = JSON.stringify(beacon);
+    let json = {
+      listenerId: LISTENER_ID,
+      beacon
+    };
     console.log(json);
 
-    request.post({
-      url,
+    request({
+      url: URL,
+      method: 'POST',
       json
     }, (err, httpResponse, body) => {
         if (err) {
+          console.log(err);
           return reject(err);
         }
         resolve();

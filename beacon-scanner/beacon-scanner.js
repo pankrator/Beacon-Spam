@@ -1,45 +1,58 @@
+'use strict';
+
+const fs = require('fs');
+
 const noble = require('noble');
+const jsonfile = require('jsonfile');
 
-const RSSI_THRESHOLD = -90;
-const EXIT_GRACE_PERIOD = 200; // milliseconds
+const FILENAME = './data2.json';
 
-var inRange = [];
+noble.on('discover', peripheral => {
+  let id = peripheral.id;
+  let name = peripheral.advertisement && peripheral.advertisement.localName;
 
-noble.on('discover', function(peripheral) {
-    if (peripheral.rssi < RSSI_THRESHOLD) {
-        return;
-    }
+  if (typeof name !== 'undefined' && name.startsWith('Kontakt')) {
+    let rssi = peripheral.rssi;
+    let txPower = peripheral.advertisement.txPowerLevel;
+    let distance = calculateDistance(rssi, txPower);
 
-    var id = peripheral.id;
-    var entered = !inRange[id];
+    let beaconData = JSON.stringify({
+      name,
+      rssi,
+      distance,
+      date: Date.now()
+    }, null, '\t');
 
-    if (entered) {
-        inRange[id] = {
-            peripheral: peripheral
-        };
+    fs.appendFile(FILENAME, `${beaconData},\n`);
 
-        console.log('"' + peripheral.advertisement.localName + '" entered (RSSI ' + peripheral.rssi + ') ' + new Date());
-    }
-
-    inRange[id].lastSeen = Date.now();
+    console.log('"' + name + '" entered (RSSI ' + rssi + ') ' + new Date());
+  }
 });
 
-setInterval(function() {
-    for (var id in inRange) {
-        if (inRange[id].lastSeen < (Date.now() - EXIT_GRACE_PERIOD)) {
-            var peripheral = inRange[id].peripheral;
-
-            console.log('"' + peripheral.advertisement.localName + '" exited (RSSI ' + peripheral.rssi + ') ' + new Date());
-
-            delete inRange[id];
-        }
-    }
-}, EXIT_GRACE_PERIOD / 2);
-
-noble.on('stateChange', function(state) {
-    if (state === 'poweredOn') {
-        noble.startScanning([], true);
-    } else {
-        noble.stopScanning();
-    }
+noble.on('stateChange', state => {
+  if (state === 'poweredOn') {
+    noble.startScanning([], true);
+  } else {
+    noble.stopScanning();
+  }
 });
+
+function calculateDistance(rssi, txPower) {
+  if (rssi === 0) {
+    return false;
+  }
+
+  let ratio = rssi / txPower;
+
+  if (ratio < 1) {
+    return Math.pow(ratio, 10);
+  } else {
+    let distance = (0.89976)*Math.pow(ratio,7.7095) + 0.111;
+    return distance / 1000000;
+  }
+}
+
+function calculateDistance2(rssi, txPower) {
+  let distance = Math.pow(10, (txPower - rssi) / 20);
+  return distance / 1000;
+}

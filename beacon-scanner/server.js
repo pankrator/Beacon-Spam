@@ -59,14 +59,10 @@ function addSample(device) {
 
 function sendSamples(beacon) {
   return new Promise((resolve, reject) => {
-<<<<<<< HEAD
     let json = {
       listenerId: LISTENER_ID,
       beacon
     };
-=======
-    let json = JSON.stringify({listernerId: LISTENER_ID, beacon: beacon});
->>>>>>> Move maths to website. Calculate distance to beacons at server.
     console.log(json);
 
     request({

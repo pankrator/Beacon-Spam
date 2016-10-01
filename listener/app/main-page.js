@@ -6,19 +6,25 @@ const http = require('http');
 const bluetooth = require('nativescript-bluetooth');
 const async = require('async');
 
-const url = 'http://10.255.255.16:8080/beacon/data';
 const BATCH_SIZE = 3;
-const LISTENER_ID = 'Beacon_Bakery';
-const TX_POWER = -12;
+
+let url = 'http://10.255.255.16:8080/beacon/data';
+let listenerId = 'Beacon_Alcochol';
+let txPower = -12;
 
 let beacons = new Map();
 
 function onNavigatingTo(args) {
   let page = args.object;
-  page.bindingContext = createViewModel();
+  
+  page.bindingContext = createViewModel(function() {
+    url = page.bindingContext.serverUrl;
+    txPower = page.bindingContext.txPower;
+    listenerId = page.bindingContext.listenerId;
 
-  async.timesSeries(9000, scan, () => {
-    console.log('Scanning stopped');
+    async.timesSeries(9000, scan, () => {
+      console.log('Scanning stopped');
+    });
   });
 }
 
@@ -52,6 +58,7 @@ function scan(n, callback) {
 }
 
 function addSample(device) {
+  console.log("addSample", device)
   let id = device.UUID;
   let beacon = beacons.get(id);
 
@@ -63,7 +70,7 @@ function addSample(device) {
 
     beacon = {
       name,
-      txPower: TX_POWER,
+      txPower: txPower,
       samples: []
     };
 
@@ -90,7 +97,7 @@ function addSample(device) {
 function sendSamples(beacon) {
   return new Promise((resolve, reject) => {
     let json = JSON.stringify({
-      listenerId: LISTENER_ID,
+      listenerId: listenerId,
       beacon
     });
     console.log(json);

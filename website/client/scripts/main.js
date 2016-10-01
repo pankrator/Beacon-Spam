@@ -1,5 +1,6 @@
-let MapRenderer = require("./maprenderer");
-let Utils = require("./utils");
+const MapRenderer = require("./maprenderer");
+const Tracker = require("./tracker");
+const Utils = require("./utils");
 
 function main() {
     let mapPromise = Utils.loadJSON("data/map.json", "GET", "");
@@ -7,9 +8,19 @@ function main() {
     let context = canvas.getContext("2d");
     let renderer = new MapRenderer(context);
     mapPromise.done(mapData => {
-        console.log("aaaa");
-        renderer.renderMap(mapData);
-        console.log(mapData);
+        renderer.initForMap(mapData);
+        const renderFrame = function () {
+            renderer.renderMap();
+            renderer.renderTrackers();
+            requestAnimationFrame(renderFrame);
+        };
+        renderFrame();
     });
+    let tracker = new Tracker(10);
+    renderer.registerTracker(tracker);
+    setInterval(() =>
+        tracker.addSample(Math.random() * canvas.width,
+                          Math.random() * canvas.height),
+        100);
 };
 main();

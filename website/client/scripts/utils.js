@@ -41,7 +41,20 @@ function loadJSON(path, verb, body) {
     return sendData(path, verb, body).then(onfulfill, onerror);
 };
 
+
+let randomColor = function () {
+    return '#'+Math.floor(Math.random()*16777215).toString(16);
+};
+
+const MathHelpers = {
+    min: (array) => array.reduce((previous, element) => Math.min(previous, element), array[0]),
+    max: (array) => array.reduce((previous, element) => Math.max(previous, element), array[0]),
+    sum: (array) => array.reduce((previous, element) => previous + element, 0),
+};
+
 module.exports = {
     sendData: sendData,
-    loadJSON: loadJSON
+    loadJSON: loadJSON,
+    randomColor: randomColor,
+    MathHelpers: MathHelpers,
 };

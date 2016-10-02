@@ -31,7 +31,7 @@ function App() {
 App.prototype.onUserPathReceived = function (path) {
     this._userTracker.samples = path.map((listener, index) => {
         return {
-            listenerId: listener,
+            listenerId: `Listener_${listener}`,
             timestamp: Date.now() + timespanFromTime(0, 0, 0, index * 2000)
         };
     });
@@ -71,7 +71,7 @@ App.prototype.onScreenChanged = function (screenIndex) {
                                            circle.radius, circle.pulseRange,
                                            "yellow", "#AAA");
             });
-            
+
             this._animationFrameId = requestAnimationFrame(renderFrame);
         };
         renderFrame(0);

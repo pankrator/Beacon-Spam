@@ -99,7 +99,7 @@ MapRenderer.prototype.renderFrame = function (trackers, dt) {
     }
     this._renderMap();
     this._renderListeners(trackers);
-    // this._renderTrackers(trackers);
+    this._renderTrackers(trackers);
 };
 
 module.exports = MapRenderer;

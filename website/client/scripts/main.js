@@ -22,8 +22,8 @@ let Screens = {
 
 function App() {
     this._mapPromise = Utils.loadJSON("data/map.json", "GET", "");
-    this._viewmodel = new Viewmodel(this.onScreenChanged.bind(this));
     this._statistician = new SampleStatistician();
+    this._viewmodel = new Viewmodel(this.onScreenChanged.bind(this), this._statistician);
     this._animationFrameId = null;
 };
 
@@ -57,18 +57,16 @@ App.prototype.onScreenChanged = function (screenIndex) {
 
         let chartCanvas = document.getElementById("chart-canvas");
         let charter = new Charter(chartCanvas.getContext("2d"));
+        this._viewmodel.charter = charter;
         this._mapPromise.done(mapData => {
             charter.initForMap(mapData);
             const listeners = Object.keys(mapData.listeners);
+            this._viewmodel.charterSettings.listeners(listeners);
             setInterval(() =>
                 tracker.addSample(listeners[~~(Math.random() * listeners.length)]),
                 100);
 
      setTimeout(() => {
-         const from = Date.now() - timespanFromTime(0, 0, 0, 500);
-         const to = Date.now();
-         const timespanToSplitOver = timespanFromTime(0, 0, 0, 100);
-         charter.chartMostVisited(this._statistician.getTrackers(), from, to, timespanToSplitOver);
      }, 2000);
         });
     }
@@ -78,14 +76,6 @@ Q.longStackSupport = true;
 App.prototype.main = function main() {
     ko.applyBindings(this._viewmodel);
     setInterval(this._statistician.updateTrackers.bind(this._statistician), 100);
-    return;
-
-     setTimeout(() => {
-         const from = Date.now() - timespanFromTime(0, 0, 0, 1000);
-         const to = Date.now();
-         const timespanToSplitOver = timespanFromTime(0, 0, 0, 200);
-         charter.chartListenerLoadOverTime(statistician.getTrackers(), "Listener_Alcohol", from, to, timespanToSplitOver);
-     }, 2000);
 };
 let app = new App();
 app.main();

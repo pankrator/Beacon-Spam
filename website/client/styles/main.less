@@ -1,10 +1,7 @@
-canvas {
-    border: 2px solid black;
-}
-
 html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .unselectable {
@@ -26,6 +23,7 @@ html, body {
     .spam-part {
         font-family: @header-font-family;
     }
+    text-shadow: 2px 2px black;
 }
 .mini-logo {
     font-size: 2em;
@@ -41,6 +39,7 @@ html, body {
     text-align: center;
     font-size: 3em;
     font-family: @header-font-family;
+    text-shadow: 2px 2px black;
     .unselectable;
 }
 
@@ -80,6 +79,22 @@ main {
     top: @header-size;
     left: 0;
     position: absolute;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: #DDD;
+}
+
+.canvas-container {
+    width: 75%;
+    height: 100vh - @header-size - 5vh;
+    float: left;
+    background-color: #DDD;
+    color: dimgrey;
+}
+
+nav {
+    font-size: 2em;
+    background-color: #DDD;
+    color: dimgrey;
+    height: 100%;
+    border-left: 3px solid dimgrey;
+    margin-top: -50px;
 }

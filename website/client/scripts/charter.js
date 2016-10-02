@@ -6,6 +6,7 @@ function Charter(context) {
     this._context = context;
     this._currentChart = null;
     Chart.defaults.global.responsive = true;
+    Chart.defaults.global.maintainAspectRatio = false;
     Chart.defaults.global.scaleBeginAtZero = false;
     Chart.defaults.global.barBeginAtOrigin = false;
 };

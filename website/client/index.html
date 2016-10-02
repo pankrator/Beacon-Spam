@@ -43,13 +43,15 @@
         </h2>
     </main>
     <main data-bind="if: currentScreen() === 1">
-        <canvas id="map-canvas" width="600px" height="600px"></canvas>
-        <aside>
+        <div class="canvas-container">
+            <canvas id="map-canvas" width="600px" height="600px"></canvas>
+        </div>
+        <nav>
             <h3>Realtime tracker</h3>
             <p>
                 Track the movement of people in your store in real-time!
             </p>
-        </aside>
+        </nav>
     </main>
     <main data-bind="if: currentScreen() === 2">
         <div class="canvas-container">
@@ -58,18 +60,21 @@
         <nav data-bind="with: charterSettings">
             <h3>Use this panel to analyze the gathered information</h3>
             <label>
-                I'd like to render a
+                I'd like to see a
                 <select data-bind="options: chartTypes, value: selectedChart"></select>
                 chart,
             </label>
-            </br>
             <label>
-                with data gathered between
-                <input type="datetime" data-bind="value: dataFrom"></input>
-                and
-                <input type="datetime" data-bind="value: dataFrom"></input>
+                regarding
+                <select data-bind="options: listeners, value: selectedListener"></select>
             </label>
             </br>
+            <label>
+                with data gathered for
+                <button data-bind="click: $root.generateChartOneHourAgo.bind($root)">The last hour</button>
+                and may be the data for
+                <button data-bind="click: $root.generateChartOneDayAgo.bind($root)">The last day</button>
+            </label>
         </nav>
     </main>
 

@@ -64,7 +64,7 @@ let handleBeaconInfo = function (req, res) {
     }
     
     let distanceToListener = beaconDistanceCalculator(beaconData.samples, beaconData.txPower);
-    if (distanceToListener < 5) {
+    if (distanceToListener < 3) {
         beaconBlackboard.add({
             listenerId: beaconData.listenerId,
             beaconId: beaconData.id,
@@ -77,7 +77,8 @@ let handleBeaconInfo = function (req, res) {
 let sendBeaconData = function (req, res) {
     var alreadySent = beaconBlackboard.alreadySent[req.session.id] || 0;
     var data = beaconBlackboard.calculatedData.slice(alreadySent);
-    beaconBlackboard.alreadySent[req.session.id] = Math.max(beaconBlackboard.calculatedData.length - 1, 0);
+    beaconBlackboard.alreadySent[req.session.id] = Math.max(beaconBlackboard.calculatedData.length, 0);
+    console.log('DATA', alreadySent, beaconBlackboard.calculatedData.length, JSON.stringify(data));
     res.send(data);
 }
 

@@ -55,9 +55,22 @@ let handleBeaconInfo = function (req, res) {
         txPower: req.body.beacon.txPower,
         samples: req.body.beacon.samples
     };
-
-    beaconBlackboard.addRaw(beaconData);
-
+    let now = Date.now();
+    let shouldNotAccept = beaconData.samples.some(function(sample) {
+        return now - sample.timestamp > 4000;
+    });
+    if (shouldNotAccept) {
+        return res.send();
+    }
+    
+    let distanceToListener = beaconDistanceCalculator(beaconData.samples, beaconData.txPower);
+    if (distanceToListener < 5) {
+        beaconBlackboard.add({
+            listenerId: beaconData.listenerId,
+            beaconId: beaconData.id,
+            timestamp: beaconData.samples[beaconData.samples.length - 1].timestamp
+        });
+    }
     res.send();
 }
 
@@ -79,7 +92,7 @@ Server.prototype.__setupRouting = function () {
     }));
 };
 
-const calculatePositions = require("./calculate_positions");
-setInterval(calculatePositions, CALCULATE_AFTER_MILLISECONDS);
+// const calculatePositions = require("./calculate_distances");
+// setInterval(calculatePositions, CALCULATE_AFTER_MILLISECONDS);
 
 module.exports = Server;

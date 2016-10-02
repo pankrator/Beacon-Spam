@@ -17,20 +17,21 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 
 SampleStatistician.prototype.updateTrackers = function () {
     window.s = this;
-    return Utils.loadJSON("/beacon", "GET").done((beaconPositionInTime) => {
-        if (beaconPositionInTime.length === 0) return;
-        console.log('data has come!', beaconPositionInTime);
-        beaconPositionInTime.forEach(beaconsPosition => {
-            for (let beaconId in beaconsPosition.beaconPositions) {
-                let el = _.find(this._trackers, { id: beaconId});
-                if (el) {
-                    beaconsPosition.beaconPositions[beaconId].timestamp = beaconsPosition.timestamp;
-                    el.samples.push(beaconsPosition.beaconPositions[beaconId]);
-                } else {
-                    this._trackers.push(new Tracker(Infinity, beaconId, [beaconsPosition.beaconPositions[beaconId]]));
-                }
-            }
+    return Utils.loadJSON("/beacon", "GET").done((beaconsToListeners) => {
+        if (beaconsToListeners.length === 0) return;
+        console.log('data has come!', beaconsToListeners);
 
+        beaconsToListeners.forEach(beacon => {
+            let locationSample = {
+                listenerId: beacon.listenerId,
+                timestamp: beacon.timestamp
+            };
+            let el = _.find(this._trackers, { id: beacon.beaconId });
+            if (el) {
+                el.samples.push(locationSample);
+            } else {
+                this._trackers.push(new Tracker(Infinity, beacon.beaconId, [locationSample]));
+            }
         });
     });
 };

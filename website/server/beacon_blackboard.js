@@ -14,11 +14,10 @@ module.exports = {
 
     /**
      * {
-     *  timestamp: ...,
-     *  beaconPositions: {
-     *      "beaconId": {x: Number, y: Number }
-     *      "beaconId2": {x: Number, y: Number }
-     *  }
+     *  listenerId,
+     *  beaconId,
+     *  timestamp
+     * }
      */
     calculatedData: [],
 
@@ -29,5 +28,8 @@ module.exports = {
 
     addRaw: function (data) {
         module.exports.rawData.push(data);
+    },
+    add: function (data) {
+        module.exports.calculatedData.push(data);
     }
 };

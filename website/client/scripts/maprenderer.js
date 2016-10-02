@@ -63,8 +63,8 @@ MapRenderer.prototype._renderListeners = function (trackers) {
 
         this.renderPulseCircle(listener.location.x, listener.location.y,
                                listenerSmallRadius, listener.range,
-                               isVisited ? "crimson" : "black",
-                               isVisited ? "rgb(196, 64, 64)" : "#AAA");
+                               isVisited ? "seagreen" : "black",
+                               isVisited ? "rgb(64, 196, 64)" : "#AAA");
     }
 };
 
@@ -83,10 +83,10 @@ MapRenderer.prototype.renderPulseCircle = function (x, y, radius, pulseRange, pu
     this._context.save();
         this._context.strokeStyle = pulseStrokeColor;
         this._context.lineWidth = 4;
-        this._context.globalAlpha = 0.5;
+        this._context.globalAlpha = 0.8;
         this._context.stroke();
         this._context.fillStyle = pulseFillColor;
-        this._context.globalAlpha = 0.3;
+        this._context.globalAlpha = 0.55;
         this._context.fill();
     this._context.restore();
 }

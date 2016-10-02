@@ -18,9 +18,13 @@ MapRenderer.prototype.initForMap = function (mapData) {
     }
 };
 
+MapRenderer.prototype._clearCanvas = function (sizeX, sizeY) {
+    this._context.clearRect(0, 0, sizeX, sizeY);
+}
+
 MapRenderer.prototype._renderMap = function () {
     const canvas = this._context.canvas;
-    this._context.clearRect(0, 0, this._map.roomDimensions.width, this._map.roomDimensions.height);
+    this._clearCanvas(this._map.roomDimensions.width, this._map.roomDimensions.height);
     this._context.strokeStyle = "black";
 
     for (const place of this._map.places) {
@@ -42,38 +46,55 @@ MapRenderer.prototype._renderMap = function () {
 MapRenderer.prototype._renderListeners = function (trackers) {
     for (const listenerId in this._map.listeners) {
         const listener = this._map.listeners[listenerId];
-        // Draw the listener as a circle
-        this._context.beginPath();
-        // Draw the listener as a circle whose radius is small percentage of the room's dimensions
-        const roomBiggerDimension = Math.max(this._map.roomDimensions.width, this._map.roomDimensions.height);;
-        const listenerSmallRadius = 0.02 * roomBiggerDimension;
-        this._context.arc(listener.location.x, listener.location.y, listenerSmallRadius, 0, 2 * Math.PI);
-        this._context.closePath();
-        this._context.fillStyle = "#AAA";
-        this._context.fill();
-        // Draw the listener's range
-        this._context.beginPath();
-        this._context.arc(listener.location.x, listener.location.y, listener.range * this._beaconAnimationProgress, 0, 2 * Math.PI);
-        this._context.closePath();
 
-        // Is the listener currently visited?
         const allowedDelay = 6000;
+        // Is the listener currently visited?
         const isVisited = trackers.some(t => {
             const lastSample = t.samples[t.samples.length - 1];
             return lastSample && lastSample.listenerId === listenerId && (Date.now() - lastSample.timestamp) <= allowedDelay;
         });
 
-        this._context.save();
-            this._context.strokeStyle = isVisited ? "crimson" : "black";
-            this._context.lineWidth = 4;
-            this._context.globalAlpha = 0.5;
-            this._context.stroke();
-            this._context.fillStyle = isVisited ? "rgb(196, 64, 64)" : "#AAA";
-            this._context.globalAlpha = 0.3;
-            this._context.fill();
-        this._context.restore();
+        // Draw the listener as a circle whose radius is small percentage of the room's dimensions
+        const roomBiggerDimension = Math.max(this._map.roomDimensions.width, this._map.roomDimensions.height);;
+        const listenerSmallRadius = 0.02 * roomBiggerDimension;
+
+        this.renderPulseCircle(listener.location.x, listener.location.y,
+                               listenerSmallRadius, listener.range,
+                               isVisited ? "crimson" : "black",
+                               isVisited ? "rgb(196, 64, 64)" : "#AAA");
     }
 };
+
+MapRenderer.prototype.renderPulseCircle = function (x, y, radius, pulseRange, pulseStrokeColor, pulseFillColor) {
+    this._context.beginPath();
+    this._context.arc(x, y, radius, 0, 2 * Math.PI);
+    this._context.closePath();
+    this._context.fillStyle = "#AAA";
+    this._context.fill();
+
+    // Draw the pulse's range
+    this._context.beginPath();
+    this._context.arc(x, y, pulseRange * this._beaconAnimationProgress, 0, 2 * Math.PI);
+    this._context.closePath();
+
+    this._context.save();
+        this._context.strokeStyle = pulseStrokeColor;
+        this._context.lineWidth = 4;
+        this._context.globalAlpha = 0.5;
+        this._context.stroke();
+        this._context.fillStyle = pulseFillColor;
+        this._context.globalAlpha = 0.3;
+        this._context.fill();
+    this._context.restore();
+}
+
+MapRenderer.prototype._updateBeaconAnimationProgress = function (dt) {
+    this._beaconAnimationProgress += dt / this._beaconAnimationDuration;
+    if (this._beaconAnimationProgress >= 1) {
+        this._beaconAnimationProgress = 0;
+    }
+};
+
 
 MapRenderer.prototype._renderTrackers = function (trackers) {
     for (const tracker of trackers) {
@@ -93,10 +114,8 @@ MapRenderer.prototype._renderTrackers = function (trackers) {
 };
 
 MapRenderer.prototype.renderFrame = function (trackers, dt) {
-    this._beaconAnimationProgress += dt / this._beaconAnimationDuration;
-    if (this._beaconAnimationProgress >= 1) {
-        this._beaconAnimationProgress = 0;
-    }
+    this._updateBeaconAnimationProgress(dt);
+
     this._renderMap();
     this._renderListeners(trackers);
     this._renderTrackers(trackers);

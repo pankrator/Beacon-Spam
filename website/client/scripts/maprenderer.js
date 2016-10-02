@@ -32,7 +32,7 @@ MapRenderer.prototype._renderMap = function () {
         const minY = Utils.MathHelpers.min(place.rects.map(rect => rect.y));
         const area = Utils.MathHelpers.sum(place.rects.map(rect => rect.width * rect.height));
         // area squared is two much, so empirically take 1.9
-        const relativeArea = Math.pow(area, 1.9) / (this._map.roomDimensions.width * this._map.roomDimensions.height);
+        const relativeArea = Math.pow(area, 1.75) / (this._map.roomDimensions.width * this._map.roomDimensions.height);
         this._context.fillStyle = "black";
         this._context.font = ~~relativeArea + "px Calibri";
         this._context.fillText(place.name, minX, minY);

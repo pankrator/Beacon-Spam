@@ -4,7 +4,7 @@
             name: "Scene",
             rects: [{
                 x: 500,
-                y: 0,
+                y: 50,
                 width: 300,
                 height: 150
             }]
@@ -12,9 +12,9 @@
         {
             name: "Alcohol",
             rects: [{
-                x: 1200,
+                x: 1250,
                 y: 300,
-                width: 100,
+                width: 150,
                 height: 300
             }]
         },
@@ -30,7 +30,7 @@
         {
             name: "Bakery",
             rects: [{
-                x: 0,
+                x: 20,
                 y: 1200,
                 width: 450,
                 height: 100
@@ -49,35 +49,35 @@
     listeners: {
         Listener_Alcohol: {
             location: {
-                x: 1200,
+                x: 1325,
                 y: 450,
             },
             range: 100
         },
         Listener_Bakery: {
             location: {
-                x: 200,
-                y: 1200,
+                x: 245,
+                y: 1250,
             },
             range: 100
         },
         Listener_Tech: {
             location: {
                 x: 1100,
-                y: 1200,
+                y: 1250,
             },
             range: 100
         },
         Listener_Babyfood: {
             location: {
                 x: 750,
-                y: 800,
+                y: 850,
             },
             range: 100
         }
     },
     roomDimensions: {
-        width: 1300,
+        width: 1500,
         height: 1300,
     }
 }

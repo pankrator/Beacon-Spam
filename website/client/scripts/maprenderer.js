@@ -60,9 +60,6 @@ MapRenderer.prototype._renderListeners = function (trackers) {
         const allowedDelay = 6000;
         const isVisited = trackers.some(t => {
             const lastSample = t.samples[t.samples.length - 1];
-            if (lastSample && lastSample.listenerId === listenerId) {
-                console.log(Date.now() - lastSample.timestamp);
-            }
             return lastSample && lastSample.listenerId === listenerId && (Date.now() - lastSample.timestamp) <= allowedDelay;
         });
 

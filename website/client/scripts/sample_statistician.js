@@ -19,7 +19,9 @@ SampleStatistician.prototype.updateTrackers = function () {
     window.s = this;
     return Utils.loadJSON("/beacon", "GET").done((beaconsToListeners) => {
         if (beaconsToListeners.length === 0) return;
-        console.log('data has come!', beaconsToListeners);
+        // console.log('data has come!', beaconsToListeners.length);
+
+        this._trackers = [];
 
         beaconsToListeners.forEach(beacon => {
             let locationSample = {

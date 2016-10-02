@@ -76,6 +76,7 @@ let handleBeaconInfo = function (req, res) {
 
 let sendBeaconData = function (req, res) {
     var alreadySent = beaconBlackboard.alreadySent[req.session.id] || 0;
+    alreadySent = 0;
     var data = beaconBlackboard.calculatedData.slice(alreadySent);
     beaconBlackboard.alreadySent[req.session.id] = Math.max(beaconBlackboard.calculatedData.length, 0);
     // console.log('DATA', alreadySent, beaconBlackboard.calculatedData.length, JSON.stringify(data));
@@ -92,8 +93,5 @@ Server.prototype.__setupRouting = function () {
         default: "index.html"
     }));
 };
-
-// const calculatePositions = require("./calculate_distances");
-// setInterval(calculatePositions, CALCULATE_AFTER_MILLISECONDS);
 
 module.exports = Server;

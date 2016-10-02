@@ -17,7 +17,6 @@ let Screens = {
     Home: 0,
     Tracking: 1,
     Statistics: 2,
-    About: 3
 }
 
 function App() {

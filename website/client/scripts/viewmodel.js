@@ -1,6 +1,5 @@
 "use strict";
 function Viewmodel(onScreenChanged, statistician) {
-    this._screens = ["home", "tracking", "statistics", "about"];
     this.currentScreen = ko.observable(0);
     this._onScreenChanged = onScreenChanged;
     this.statistician = statistician;

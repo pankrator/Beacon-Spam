@@ -57,11 +57,15 @@ MapRenderer.prototype._renderListeners = function (trackers) {
         this._context.closePath();
 
         // Is the listener currently visited?
-        const allowedDelay = 1e4;
+        const allowedDelay = 6000;
         const isVisited = trackers.some(t => {
             const lastSample = t.samples[t.samples.length - 1];
+            if (lastSample && lastSample.listenerId === listenerId) {
+                console.log(Date.now() - lastSample.timestamp);
+            }
             return lastSample && lastSample.listenerId === listenerId && (Date.now() - lastSample.timestamp) <= allowedDelay;
         });
+
         this._context.save();
             this._context.strokeStyle = isVisited ? "crimson" : "black";
             this._context.lineWidth = 4;
@@ -98,7 +102,7 @@ MapRenderer.prototype.renderFrame = function (trackers, dt) {
     }
     this._renderMap();
     this._renderListeners(trackers);
-    this._renderTrackers(trackers);
+    // this._renderTrackers(trackers);
 };
 
 module.exports = MapRenderer;

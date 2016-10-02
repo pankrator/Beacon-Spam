@@ -12,12 +12,12 @@
         {
             name: "Bakery",
             rects: [{
-                x: 800,
+                x: 50,
                 y: 750,
                 width: 50,
                 height: 150,
             }, {
-                x: 850,
+                x: 100,
                 y: 750,
                 width: 75,
                 height: 50,
@@ -34,8 +34,22 @@
         },
         Listener_Bakery: {
             location: {
-                x: 825,
+                x: 75,
                 y: 775
+            },
+            range: 100
+        },
+        Listener_Tech: {
+            location: {
+                x: 500,
+                y: 500
+            },
+            range: 100
+        },
+        Listener_Babyfood: {
+            location: {
+                x: 850,
+                y: 100
             },
             range: 100
         }

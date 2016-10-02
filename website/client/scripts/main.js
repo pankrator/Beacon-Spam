@@ -32,17 +32,17 @@ function main() {
         };
         renderFrame(0);
     });
-    let tracker = statistician.registerTracker();
+    // let tracker = statistician.registerTracker();
     setInterval(statistician.updateTrackers.bind(statistician), 100);
 
     let chartCanvas = document.getElementById("chart-canvas");
     let charter = new Charter(chartCanvas.getContext("2d"));
     mapPromise.done(mapData => {
         charter.initForMap(mapData);
-        const listeners = Object.keys(mapData.listeners);
-        setInterval(() =>
-             tracker.addSample(listeners[~~(Math.random() * listeners.length)]),
-             100);
+        // const listeners = Object.keys(mapData.listeners);
+        // setInterval(() =>
+        //      tracker.addSample(listeners[~~(Math.random() * listeners.length)]),
+        //      100);
     });
     // Wait for the tracker to put gather some data
 

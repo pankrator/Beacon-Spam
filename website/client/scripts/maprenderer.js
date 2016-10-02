@@ -51,6 +51,9 @@ MapRenderer.prototype._renderListeners = function (trackers) {
         // Is the listener currently visited?
         const isVisited = trackers.some(t => {
             const lastSample = t.samples[t.samples.length - 1];
+            if (!lastSample) {
+                return false;
+            }
             return lastSample && lastSample.listenerId === listenerId && (Date.now() - lastSample.timestamp) <= allowedDelay;
         });
 
@@ -98,14 +101,17 @@ MapRenderer.prototype._updateBeaconAnimationProgress = function (dt) {
 
 MapRenderer.prototype._renderTrackers = function (trackers) {
     for (const tracker of trackers) {
-        if (tracker.samples.length === 0) {
+        let samples = tracker.samples.filter(sample => {
+            return (Date.now() - sample.timestamp) < 10 * 60 * 1000;
+        });
+        if (samples.length === 0) {
             continue;
         }
         this._context.beginPath();
         const positionForSample = sample => this._map.listeners[sample.listenerId].location;
-        this._context.moveTo(positionForSample(tracker.samples[0]).x,
-                             positionForSample(tracker.samples[0]).y);
-        for (const position of tracker.samples.map(positionForSample)) {
+        this._context.moveTo(positionForSample(samples[0]).x,
+                             positionForSample(samples[0]).y);
+        for (const position of samples.map(positionForSample)) {
             this._context.lineTo(position.x, position.y);
         }
         this._context.strokeStyle = tracker.color;

@@ -53,14 +53,6 @@ App.prototype.onScreenChanged = function (screenIndex) {
         let previousTimestamp = 0;
 
         let randomCircles = [];
-        // for (let i = 0; i < 10; i++) {
-        //     randomCircles.push({
-        //         x: Math.floor(Math.random() * 200) + 40,
-        //         y: Math.floor(Math.random() * 200) + 40,
-        //         radius: 4,
-        //         pulseRange: 30
-        //     });
-        // }
         randomCircles.push({
             x: 20,
             y: 120,
@@ -71,8 +63,6 @@ App.prototype.onScreenChanged = function (screenIndex) {
         const renderFrame = timestamp => {
             const dt = timestamp - previousTimestamp;
             previousTimestamp = timestamp;
-
-            // renderer.renderFrame(this._statistician.getTrackers(), dt);
 
             renderer._clearCanvas(canvas.width, canvas.height);
             renderer._updateBeaconAnimationProgress(dt);
@@ -121,9 +111,6 @@ App.prototype.onScreenChanged = function (screenIndex) {
             charter.initForMap(mapData);
             const listeners = Object.keys(mapData.listeners);
             this._viewmodel.charterSettings.listeners(listeners);
-            setInterval(() =>
-                tracker.addSample(listeners[~~(Math.random() * listeners.length)]),
-                100);
         });
     }
 };

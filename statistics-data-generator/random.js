@@ -13,10 +13,10 @@ const BEACON_IDS = [
 ];
 
 const LISTENER_IDS = [
-    'Babyfood',
-    'Tech',
-    'Bakery',
-    'Alcohol'
+    'Listener_Babyfood',
+    'Listener_Tech',
+    'Listener_Bakery',
+    'Listener_Alcohol'
 ];
 
 let now = new Date();
@@ -27,7 +27,7 @@ minusTwoHours.setHours(now.getHours() - 2);
 
 let dailyData = LISTENER_IDS.map(listener => {
     let visits = [];
-    let visitsNumber = randomNumberTo(1000);
+    let visitsNumber = randomNumberTo(700);
     for (let i = 0; i < visitsNumber; i += 1) {
        visits.push({
            beaconId: BEACON_IDS[randomNumberTo(BEACON_IDS.length - 1)],
@@ -39,30 +39,31 @@ let dailyData = LISTENER_IDS.map(listener => {
     return visits;
 });
 
-dailyData = [].concat(dailyData);
+dailyData = [].concat.apply([], dailyData);
+// const listenerPerSample = [].concat.apply([], listenersPerTracker);
 
 let randomTimeStampsNumber = randomNumberTo(120);
 let randomTimestamps = [];
 for (let i = 0; i < randomTimeStampsNumber; i += 1) {
-    randomTimestamps.push(randomDate(minusTwoHours, now));
+    randomTimestamps.push(randomDate(yesterday, now));
 }
 
-let attendanceData = LISTENER_IDS.map(listener => {
-      let data = [];
+// let attendanceData = LISTENER_IDS.map(listener => {
+//       let data = [];
 
-      randomTimestamps.forEach(timestamp => {
-          let attendance = randomNumberTo(20);
-          data.push({
-              listenerId: listener,
-              attendance,
-              timestamp
-          });
-      });
+//       randomTimestamps.forEach(timestamp => {
+//           let attendance = randomNumberTo(20);
+//           data.push({
+//               listenerId: listener,
+//               attendance,
+//               timestamp
+//           });
+//       });
 
-      return data;
-});
+//       return data;
+// });
 
-attendanceData = [].concat(attendanceData);
+// attendanceData = [].concat(attendanceData);
 
 function randomDate(start, end) {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
@@ -73,5 +74,5 @@ function randomNumberTo(n) {
 }
 
 jsonfile.spaces = 4;
-jsonfile.writeFile('./daily.json', { dailyData }, console.error);
-jsonfile.writeFile('./attendance.json', { attendanceData }, console.error);
+jsonfile.writeFile('./daily.json', { daily: dailyData }, console.error);
+// jsonfile.writeFile('./attendance.json', { attendanceData }, console.error);

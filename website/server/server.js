@@ -4,6 +4,9 @@ const CALCULATE_AFTER_MILLISECONDS = 700;
 const fs = require("fs");
 const path = require("path");
 
+const DAILY_ATTENDANCE = require("./bootstrap_data/daily.json").daily;
+const ATTENDANCE = require("./bootstrap_data/attendance.json").attendance;
+
 const Q = require("q");
 const express = require("express");
 const session = require('express-session');
@@ -15,6 +18,22 @@ const beaconDistanceCalculator = require('./maths/distance');
 let beaconBlackboard = require('./beacon_blackboard');
 let listeners = eval("new Object(" + fs.readFileSync('./../website/client/data/map.json') + ");").listeners;
 let places = eval("new Object(" + fs.readFileSync('./../website/client/data/map.json') + ");").places;
+
+DAILY_ATTENDANCE.forEach(function(daily) {
+    beaconBlackboard.add({
+        beaconId: daily.beaconId,
+        listenerId: daily.listenerId,
+        timestamp: new Date(daily.timestamp).getTime()
+    });
+});
+
+ATTENDANCE.forEach(function(visit) {
+    beaconBlackboard.add({
+        beaconId: visit.beaconId,
+        listenerId: visit.listenerId,
+        timestamp: new Date(visit.timestamp).getTime()
+    });
+});
 
 function Server() {
     Q.longStackSupport = true;

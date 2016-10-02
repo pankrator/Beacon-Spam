@@ -1,0 +1,694 @@
+{
+    "attendance": [
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:05:54.085Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:30:12.721Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:20:07.223Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:25:39.657Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:20:22.114Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:58:42.902Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:15:26.522Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:57:51.953Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:27:09.386Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:01:44.517Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:07:44.089Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:46:29.114Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:29:26.210Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:54:13.966Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:08:14.743Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:54:48.717Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:08:46.780Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:45:24.440Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:35:15.303Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:37:07.880Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:22:08.414Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:35:29.704Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:11:42.767Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:37:43.320Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:32:22.369Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:06:57.545Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:43:50.441Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:01:09.411Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:52:32.644Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:39:45.263Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:22:02.098Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:33:41.527Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:08:06.474Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:01:48.199Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:26:03.145Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:27:25.635Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T08:01:27.251Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:58:13.762Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:27:55.287Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:25:03.018Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:32:08.379Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T06:44:33.317Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:18:06.577Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Babyfood",
+            "timestamp": "2016-10-02T07:32:14.562Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:58:00.488Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T08:01:27.672Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:55:08.367Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:42:01.997Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:22:00.207Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:18:50.030Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:10:39.900Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:42:58.235Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:46:21.256Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:43:03.161Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:58:49.800Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:48:47.835Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:52:39.555Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:03:17.718Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:24:58.325Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:18:01.325Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:41:50.071Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:38:33.222Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:34:49.477Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:13:41.830Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:21:15.616Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:52:15.653Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:32:36.299Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:51:50.686Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T06:22:18.954Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:20:33.945Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:24:03.601Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Tech",
+            "timestamp": "2016-10-02T07:06:08.433Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:30:05.146Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:58:38.218Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:17:46.173Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:34:56.672Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:33:36.213Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:18:45.066Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:34:55.402Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T08:00:42.465Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:13:36.542Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:15:16.993Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:16:13.733Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:42:10.140Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:23:31.271Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:19:20.635Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:54:18.074Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:28:04.822Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:46:57.491Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:31:25.677Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:05:45.866Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:29:22.352Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:54:33.134Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T07:56:25.235Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:46:12.503Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:30:42.582Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Bakery",
+            "timestamp": "2016-10-02T06:31:08.617Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:32:51.386Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T08:07:45.594Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:24:24.745Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:30:29.569Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T08:08:17.481Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:48:37.628Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:56:51.238Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:10:04.150Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:16:23.988Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:15:08.461Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:36:18.466Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:33:03.328Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:22:52.779Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:54:13.266Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:59:20.792Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:34:59.214Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:59:49.347Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:43:51.385Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:59:17.958Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:20:30.785Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:20:25.946Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:55:37.115Z"
+        },
+        {
+            "beaconId": "8d1681e4-4e5c-4daa-bcef-c0aba71098b2",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T08:01:44.443Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:44:17.759Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:35:16.959Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T08:12:18.510Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:38:28.738Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:32:04.964Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:41:25.437Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:50:29.570Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:28:04.249Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:27:28.561Z"
+        },
+        {
+            "beaconId": "f07b61a9-5ea9-4f5a-ac6c-3c90f025c5e6",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T08:05:06.977Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:29:30.748Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:18:48.694Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:22:37.311Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:27:33.142Z"
+        },
+        {
+            "beaconId": "fcb59194-dbc6-4768-9634-a22d8851de84",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:43:27.443Z"
+        },
+        {
+            "beaconId": "948075df-9b16-4b2a-91b6-a91d76dfb585",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:34:03.770Z"
+        },
+        {
+            "beaconId": "99e8d8b3-e074-4abc-a219-8f21d6f4841f",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T06:18:59.341Z"
+        },
+        {
+            "beaconId": "dbfb878c-fec4-41c3-9b47-4eb8f6ee4d10",
+            "listenerId": "Listener_Alcohol",
+            "timestamp": "2016-10-02T07:59:39.969Z"
+        }
+    ]
+}

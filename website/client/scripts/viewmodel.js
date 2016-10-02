@@ -1,7 +1,10 @@
 "use strict";
-function Viewmodel(onScreenChanged, statistician) {
+const Utils = require("./utils");
+
+function Viewmodel(onScreenChanged, onUserPathReceived, statistician) {
     this.currentScreen = ko.observable(0);
     this._onScreenChanged = onScreenChanged;
+    this._onUserPathReceived = onUserPathReceived;
     this.statistician = statistician;
     this.charter = null;
     this.charterSettings = {
@@ -12,7 +15,13 @@ function Viewmodel(onScreenChanged, statistician) {
         dataFrom: ko.observable(0),
         dataTo: ko.observable(0),
         timespanToSplitOver: ko.observable(0)
-    }
+    };
+    this.renderer = null;
+    this.productSettings = {
+        productList: ko.observableArray(),
+        currentProduct: ko.observable(),
+        selectedProducts: ko.observableArray()
+    };
 };
 
 Viewmodel.prototype.loadScreen = function (index) {
@@ -57,5 +66,14 @@ Viewmodel.prototype.generateChartOneDayAgo = function () {
     this.charterSettings.timespanToSplitOver(timespanFromTime(3, 0, 0, 0));
     this.generateChart();
 };
+
+Viewmodel.prototype.addProduct = function () {
+    this.productSettings.selectedProducts.push(this.productSettings.currentProduct());
+};
+
+Viewmodel.prototype.computeRoute = function () {
+    Utils.loadJSON("/path", "POST", this.productSettings.selectedProducts())
+    .done(path => this._onUserPathReceived(path));
+}
 
 module.exports = Viewmodel;

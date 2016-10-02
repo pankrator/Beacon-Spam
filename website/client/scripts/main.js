@@ -21,10 +21,23 @@ let Screens = {
 
 function App() {
     this._mapPromise = Utils.loadJSON("data/map.json", "GET", "");
+    this._productsPromise = Utils.loadJSON("/products", "GET", "");
     this._statistician = new SampleStatistician();
-    this._viewmodel = new Viewmodel(this.onScreenChanged.bind(this), this._statistician);
+    this._viewmodel = new Viewmodel(this.onScreenChanged.bind(this), this.onUserPathReceived.bind(this), this._statistician);
+    this._userTracker = this._statistician.registerTracker();
     this._animationFrameId = null;
 };
+
+App.prototype.onUserPathReceived = function (path) {
+    this._userTracker.samples = path.map((listener, index) => {
+        return {
+            listenerId: listener,
+            timestamp: Date.now() + timespanFromTime(0, 0, 0, index * 2000)
+        };
+    });
+    this._userTracker.color = "crimson";
+    alert("Follow the crimson path to your destination!");
+}
 
 App.prototype.onScreenChanged = function (screenIndex) {
     console.log(this);
@@ -74,9 +87,17 @@ App.prototype.onScreenChanged = function (screenIndex) {
         renderFrame(0);
     } else if (screenIndex === Screens.Tracking) {
         let canvas = document.getElementById("map-canvas");
+        // Resize the canvas to the size of its container
+        const containerStyle = window.getComputedStyle(canvas.parentElement);
+        canvas.width = parseFloat(containerStyle.width) * 0.9;
+        canvas.height = parseFloat(containerStyle.height) * 0.9;
         let context = canvas.getContext("2d");
         let renderer = new MapRenderer(context);
 
+        this._productsPromise.done(productData => {
+            this._viewmodel.productSettings.productList(productData);
+            this._viewmodel.renderer = renderer;
+        });
         this._mapPromise.done(mapData => {
             renderer.initForMap(mapData);
             let previousTimestamp = 0;
@@ -103,9 +124,6 @@ App.prototype.onScreenChanged = function (screenIndex) {
             setInterval(() =>
                 tracker.addSample(listeners[~~(Math.random() * listeners.length)]),
                 100);
-
-     setTimeout(() => {
-     }, 2000);
         });
     }
 };

@@ -25,7 +25,8 @@
             <li class="link--nukun" data-bind="click: $root.loadScreen.bind($root, 2)"><i class="fa fa-table" aria-hidden="true"></i> Stati<span>s</span>tics</li>
         </ul>
     </header>
-    <main data-bind="if: currentScreen() === 0">
+     <!-- ko if: currentScreen() === 0 -->
+    <main>
         <canvas id="pulsing-circles" style="border: none; width: 100%; height: 100%; position: absolute; left: 0; top: 0"></canvas>
         <video class="background-video"
             autoplay
@@ -42,18 +43,38 @@
             Welcome to the future.
         </h2>
     </main>
-    <main data-bind="if: currentScreen() === 1">
+    <!-- /ko -->
+    <!-- ko if: currentScreen() === 1 -->
+    <main>
         <div class="canvas-container">
             <canvas id="map-canvas" width="600px" height="600px"></canvas>
         </div>
-        <nav>
+        <nav data-bind="with: $root.productSettings">
             <h3>Realtime tracker</h3>
-            <p>
+            <p id="realtime-tracker-description">
                 Track the movement of people in your store in real-time!
             </p>
+
+            <h3>Find your way around</h3>
+            <p>
+                We can also tell you the shortest personalized route in here
+                so that you can focus on gettings things done instead of optimizing.
+            </p>
+            <h4>Tell us what you need today:</h4>
+            You require:
+            <select data-bind="options: productList, value: currentProduct"></select>
+            <button data-bind="click: $root.addProduct.bind($root)">Add</button>
+            <ul data-bind="foreach: selectedProducts">
+                <li data-bind="text: $data"></li>
+            </ul>
+            <button data-bind="click: $root.computeRoute.bind($root)">Ask us about your shortest route!</button>
         </nav>
+        <section>
+        </section>
     </main>
-    <main data-bind="if: currentScreen() === 2">
+    <!-- /ko -->
+    <!-- ko if: currentScreen() === 2 -->
+    <main>
         <div class="canvas-container">
             <canvas id="chart-canvas" width="600px" height="600px"></canvas>
         </div>
@@ -77,6 +98,8 @@
             </label>
         </nav>
     </main>
+    <!-- /ko -->
+
 
     <script src="thirdparty/knockout-latest.js"></script>
     <script src="thirdparty/q.js"></script>

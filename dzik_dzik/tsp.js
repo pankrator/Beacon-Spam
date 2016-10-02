@@ -16,7 +16,7 @@ var Task = genetic.Task
 
 
 // node 0 is the start and the end vertex
-var numVerts = 50;
+var numVerts = 5;
 
 var graph = [
     [0, 0, 0, 0, 0],
@@ -26,26 +26,20 @@ var graph = [
     [0, 0, 0, 0, 0],
 ];
 
-graph = [ ];
-for(var i = 0; i < numVerts; i++) {
-    graph[i] = [];
-}
 
-for(var i = 0; i < numVerts; i++) {
-    for(var j = i; j < numVerts; j++) {
-        graph[i][j] = Math.random()*30;
-        graph[j][i] = Math.random()*30;
-    }
-}
+//graph = [ ];
+//for(var i = 0; i < numVerts; i++) {
+//    graph[i] = [];
+//}
+//
+//for(var i = 0; i < numVerts; i++) {
+//    for(var j = i; j < numVerts; j++) {
+//        graph[i][j] = Math.random()*30;
+//        graph[j][i] = Math.random()*30;
+//    }
+//}
 
-var setEdge = function(u, v, w) {
-    graph[u][v] = w;
-    graph[v][u] = w;
-}
 
-var getEdge = function(u, v) {
-    return graph[u][v]
-}
 
 //setEdge(0, 1, 2);
 //setEdge(0, 2, 1);
@@ -54,6 +48,7 @@ var getEdge = function(u, v) {
 //setEdge(2, 3, 1);
 //
 //setEdge(0, 3, 10000);
+
 
 function crossover(parent1, parent2, callback) {
     var child = {};
@@ -149,7 +144,7 @@ function getRandomSolution(callback) {
 
 
 function stopCriteria() {
-    return (this.generation == 10000)
+    return (this.generation == 1000)
 }
 
 function fitness(solution, callback) {
@@ -200,12 +195,6 @@ function fitness(solution, callback) {
 //
 // t.on('reproduction end', function (children) { console.log('reproduction end',children) })
 //
-//t.on('statistics', function (statistics) { console.log('statistics', 1e9 - statistics.maxScore)})
-
-var t = new Task(options)
-t.on('error', function (error) { console.log('ERROR - ', error) })
-t.run(function (stats) { console.log('results', 1e9 - stats.maxScore)})
-
 
 /**
  * adj matrix, where
@@ -224,7 +213,7 @@ var findAllDistances = function(graph) {
 }
 
 
-// seubset - array of indexes
+// sebset - array of indexes
 var subgraph = function(graph, subset) {
     var newGraph = [];
     var nv = subset.length;
@@ -239,3 +228,64 @@ var subgraph = function(graph, subset) {
 
     return newGraph
 }
+
+
+
+
+var setEdge = function(u, v, w) {
+    graph[u][v] = w;
+    graph[v][u] = w;
+}
+
+var getEdge = function(u, v) {
+    return graph[u][v]
+}
+
+
+
+
+
+
+
+var getRoute = function(callback) {
+    numVerts = 5;
+
+    var graph = [
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0],
+    ];
+
+    var idNameMapping = ["Scena", "BabyFood", "Alcohol", "Bakery", "Tech"];
+
+    setEdge(0, 1, 2)
+    setEdge(0, 2, 2.5)
+    setEdge(0, 3, 4.5)
+    setEdge(0, 4, 4.5)
+    setEdge(1, 2, 4)
+    setEdge(1, 3, 3.5)
+    setEdge(1, 4, 4)
+    setEdge(2, 3, 10)
+    setEdge(2, 4, 2)
+    setEdge(3, 4, 8)
+
+
+    var t = new Task(options)
+
+//t.on('statistics', function (statistics) { console.log('statistics', 1e9 - statistics.maxScore)})
+
+    t.on('error', function (error) { console.log('ERROR - ', error) })
+    t.run(function (stats) {
+        var res = stats.max.data.map(function (id) {
+            return idNameMapping[id];
+        });
+        res.splice(0, 0, idNameMapping[0]);
+        res.push(idNameMapping[0])
+        callback(res)
+        //console.log('results', 1e9 - stats.maxScore, stats.max.data)}
+    })
+}
+
+getRoute(console.log);

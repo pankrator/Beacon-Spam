@@ -34,7 +34,46 @@ App.prototype.onScreenChanged = function (screenIndex) {
         this._animationFrameId = null;
     }
 
-    if (screenIndex === Screens.Tracking) {
+    if (screenIndex === Screens.Home) {
+        let canvas = document.getElementById("pulsing-circles");
+        let context = canvas.getContext("2d");
+        let renderer = new MapRenderer(context);
+        let previousTimestamp = 0;
+
+        let randomCircles = [];
+        // for (let i = 0; i < 10; i++) {
+        //     randomCircles.push({
+        //         x: Math.floor(Math.random() * 200) + 40,
+        //         y: Math.floor(Math.random() * 200) + 40,
+        //         radius: 4,
+        //         pulseRange: 30
+        //     });
+        // }
+        randomCircles.push({
+            x: 20,
+            y: 120,
+            radius: 1,
+            pulseRange: 15
+        });
+
+        const renderFrame = timestamp => {
+            const dt = timestamp - previousTimestamp;
+            previousTimestamp = timestamp;
+
+            // renderer.renderFrame(this._statistician.getTrackers(), dt);
+
+            renderer._clearCanvas(canvas.width, canvas.height);
+            renderer._updateBeaconAnimationProgress(dt);
+            randomCircles.forEach(function(circle) {
+                renderer.renderPulseCircle(circle.x, circle.y,
+                                           circle.radius, circle.pulseRange,
+                                           "yellow", "#AAA");
+            });
+            
+            this._animationFrameId = requestAnimationFrame(renderFrame);
+        };
+        renderFrame(0);
+    } else if (screenIndex === Screens.Tracking) {
         let canvas = document.getElementById("map-canvas");
         let context = canvas.getContext("2d");
         let renderer = new MapRenderer(context);

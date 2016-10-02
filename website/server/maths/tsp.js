@@ -250,21 +250,25 @@ var dist = function(p1, p2) {
 
 
 var replaceByCenters = function (coords) {
+    let newCoord = util.copycoords;
     for(let key in coords) {
-        coords[key].x += coords[key].width/2;
-        coords[key].y += coords[key].height/2;
+        let newX = coords[key].x + coords[key].width/2;
+        let newY = coords[key].y + coords[key].height/2;
 
-        delete coords[key].width
-        delete coords[key].height
+        coords[key] = {
+            x: newX,
+            y: newY
+        };
     }
 };
 
 
 var getRouteByCoords = function(coords, callback) {
     replaceByCenters(coords);
-    numVerts = coords.length;
+    numVerts = Object.keys(coords).length;
 
     var idNameMapping = Object.keys(coords);
+
     graph = [];
     for(i = 0; i < numVerts; i++) graph[i] = [];
 
@@ -302,7 +306,7 @@ var getRoute = function(callback) {
         [0, 0, 0, 0, 0],
     ];
 
-    var idNameMapping = ["Scena", "BabyFood", "Alcohol", "Bakery", "Tech"];
+    var idNameMapping = ["Scene", "BabyFood", "Alcohol", "Bakery", "Tech"];
 
     setEdge(0, 1, 2)
     setEdge(0, 2, 2.5)
@@ -332,7 +336,7 @@ var getRoute = function(callback) {
     })
 }
 
-getRoute(console.log);
+//getRoute(console.log);
 
 
 module.exports.getRoute = getRoute;

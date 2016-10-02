@@ -1,61 +1,83 @@
 {
     places: [
         {
+            name: "Scene",
+            rects: [{
+                x: 500,
+                y: 0,
+                width: 300,
+                height: 150
+            }]
+        },
+        {
             name: "Alcohol",
             rects: [{
-                x: 100,
-                y: 20,
-                width: 200,
-                height: 50,
-            }],
+                x: 1200,
+                y: 300,
+                width: 100,
+                height: 300
+            }]
+        },
+        {
+            name: "Babyfood",
+            rects: [{
+                x: 550,
+                y: 800,
+                width: 400,
+                height: 100
+            }]
         },
         {
             name: "Bakery",
             rects: [{
-                x: 50,
-                y: 750,
-                width: 50,
-                height: 150,
-            }, {
-                x: 100,
-                y: 750,
-                width: 75,
-                height: 50,
-            }],
+                x: 0,
+                y: 1200,
+                width: 450,
+                height: 100
+            }]
+        },
+        {
+            name: "Tech",
+            rects: [{
+                x: 900,
+                y: 1200,
+                width: 400,
+                height: 100
+            }]
         }
     ],
     listeners: {
         Listener_Alcohol: {
             location: {
-                x: 110,
-                y: 35
+                x: 1200,
+                y: 450,
             },
             range: 100
         },
         Listener_Bakery: {
             location: {
-                x: 75,
-                y: 775
+                x: 200,
+                y: 1200,
             },
             range: 100
         },
         Listener_Tech: {
             location: {
-                x: 500,
-                y: 500
+                x: 1100,
+                y: 1200,
             },
             range: 100
         },
         Listener_Babyfood: {
             location: {
-                x: 850,
-                y: 100
+                x: 750,
+                y: 800,
             },
             range: 100
         }
     },
     roomDimensions: {
-        width: 1000,
-        height: 1000,
+        width: 1300,
+        height: 1300,
     }
 }

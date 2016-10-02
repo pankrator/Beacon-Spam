@@ -85,7 +85,7 @@ let sendBeaconData = function (req, res) {
     res.send(data);
 }
 
-let products = {
+const products = {
     "Beer" : "Alcohol",
     "Vodka" : "Alcohol",
     "Laptop" : "Tech",
@@ -97,15 +97,22 @@ let products = {
 
 let pathByProducts = function(req, res) {
     let selectedProducts = req.body;
-    let places = {"Scena":{}};
+    let placesToVisit = {"Scene": places.filter(function(pl) { return pl.name === "Scene";})[0].rects[0]};
 
-    for(let pr in selectedProducts) {
-        if (!places.hasOwnProperty(pr)) {
-            places[pr] = places.filter(function(pl) { return pl.name === pr;})[0].rects[0];
+
+    //console.log(selectedProducts)
+    //console.log("places", placesToVisit)
+    for(let i in selectedProducts) {
+        let pr = selectedProducts[i]
+        let locationName = products[pr]
+        if (!placesToVisit.hasOwnProperty(locationName)) {
+            //console.log("pr", pr)
+            //console.log("place",locationName)
+            placesToVisit[locationName] = places.filter(function(pl) { return pl.name === locationName;})[0].rects[0];
         }
     }
 
-    tsp.getRouteByCoords(req, function(route) {
+    tsp.getRouteByCoords(placesToVisit, function(route) {
         res.send(route);
     })
 }

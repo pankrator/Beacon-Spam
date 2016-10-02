@@ -25,51 +25,23 @@
         }
     ],
     listeners: {
-        Beacon_Alcohol: {
+        Listener_Alcohol: {
             location: {
-                x: 0,
-                y: 0
+                x: 110,
+                y: 35
             },
-            range: 0
+            range: 100
         },
-        Beacon_Bakery: {
+        Listener_Bakery: {
             location: {
-                x: 0,
-                y: 1.75
+                x: 825,
+                y: 775
             },
-            range: 0
-        },
-        Beacon_Tech: {
-            location: {
-                x: 2,
-                y: 3.5
-            },
-            range: 0
-        },
-        Beacon_Macon: {
-            location: {
-                x: 0,
-                y: 3.5
-            },
-            range: 0
-        },
-        Beacon_Babyfood: {
-            location: {
-                x: 2,
-                y: 1.75
-            },
-            range: 0
-        },
-        Beacon_Sweets: {
-            location: {
-                x: 2,
-                y: 0
-            },
-            range: 0
+            range: 100
         }
     },
     roomDimensions: {
-        width: 4,
-        height: 3.5,
+        width: 1000,
+        height: 1000,
     }
 }

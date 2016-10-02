@@ -4,6 +4,8 @@ const Utils = require("./utils");
 function MapRenderer(context) {
     this._context = context;
     this._map = null;
+    this._beaconAnimationProgress = 0;
+    this._beaconAnimationDuration = 2000;
 };
 
 MapRenderer.prototype.initForMap = function (mapData) {
@@ -35,7 +37,9 @@ MapRenderer.prototype._renderMap = function () {
         this._context.font = ~~relativeArea + "px Calibri";
         this._context.fillText(place.name, minX, minY);
     }
+};
 
+MapRenderer.prototype._renderListeners = function (trackers) {
     for (const listenerId in this._map.listeners) {
         const listener = this._map.listeners[listenerId];
         // Draw the listener as a circle
@@ -49,16 +53,23 @@ MapRenderer.prototype._renderMap = function () {
         this._context.fill();
         // Draw the listener's range
         this._context.beginPath();
-        this._context.arc(listener.location.x, listener.location.y, listener.range, 0, 2 * Math.PI);
+        this._context.arc(listener.location.x, listener.location.y, listener.range * this._beaconAnimationProgress, 0, 2 * Math.PI);
         this._context.closePath();
-        this._context.strokeStyle = "black";
-        this._context.lineWidth = 4;
+
+        // Is the listener currently visited?
+        const allowedDelay = 1e4;
+        const isVisited = trackers.some(t => {
+            const lastSample = t.samples[t.samples.length - 1];
+            return lastSample && lastSample.listenerId === listenerId && (Date.now() - lastSample.timestamp) <= allowedDelay;
+        });
         this._context.save();
-        this._context.globalAlpha = 0.5;
-        this._context.stroke();
-        this._context.fillStyle = "#AAA";
-        this._context.globalAlpha = 0.3;
-        this._context.fill();
+            this._context.strokeStyle = isVisited ? "crimson" : "black";
+            this._context.lineWidth = 4;
+            this._context.globalAlpha = 0.5;
+            this._context.stroke();
+            this._context.fillStyle = isVisited ? "rgb(196, 64, 64)" : "#AAA";
+            this._context.globalAlpha = 0.3;
+            this._context.fill();
         this._context.restore();
     }
 };
@@ -69,18 +80,24 @@ MapRenderer.prototype._renderTrackers = function (trackers) {
             continue;
         }
         this._context.beginPath();
-        this._context.moveTo(tracker.samples[0].x,
-                             tracker.samples[0].y);
-        for (const sample of tracker.samples) {
-            this._context.lineTo(sample.x, sample.y);
+        const positionForSample = sample => this._map.listeners[sample.listenerId].location;
+        this._context.moveTo(positionForSample(tracker.samples[0]).x,
+                             positionForSample(tracker.samples[0]).y);
+        for (const position of tracker.samples.map(positionForSample)) {
+            this._context.lineTo(position.x, position.y);
         }
         this._context.strokeStyle = tracker.color;
         this._context.stroke();
     }
 };
 
-MapRenderer.prototype.renderFrame = function (trackers) {
+MapRenderer.prototype.renderFrame = function (trackers, dt) {
+    this._beaconAnimationProgress += dt / this._beaconAnimationDuration;
+    if (this._beaconAnimationProgress >= 1) {
+        this._beaconAnimationProgress = 0;
+    }
     this._renderMap();
+    this._renderListeners(trackers);
     this._renderTrackers(trackers);
 };
 

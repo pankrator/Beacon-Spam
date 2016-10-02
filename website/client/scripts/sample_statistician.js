@@ -58,8 +58,8 @@ function Tracker(sampleCount, id, samples) {
     this.color = Utils.randomColor();
 };
 
-Tracker.prototype.addSample = function (sampleX, sampleY) {
-    this.samples.push({ x: sampleX, y: sampleY, timestamp: Date.now()});
+Tracker.prototype.addSample = function (listenerId) {
+    this.samples.push({ listenerId: listenerId, timestamp: Date.now()});
     if (this.samples.length >= this._maxSampleCount) {
         this.samples.shift();
     }

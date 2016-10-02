@@ -2,8 +2,9 @@
 const Utils = require("./utils");
 const _ = require("lodash");
 
-function SampleStatistician() {
+function SampleStatistician(app) {
     this._trackers = [];
+    this._app = app;
 };
 
 SampleStatistician.prototype.registerTracker = function (tracker) {
@@ -22,7 +23,10 @@ SampleStatistician.prototype.updateTrackers = function () {
         // console.log('data has come!', beaconsToListeners.length);
 
         this._trackers.forEach(tracker => {
-            tracker.samples = []
+            if (tracker == this._app._userTracker){
+                return;
+            }
+            tracker.samples = [];
         });
 
         beaconsToListeners.forEach(beacon => {

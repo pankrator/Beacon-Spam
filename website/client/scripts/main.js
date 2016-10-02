@@ -22,7 +22,7 @@ let Screens = {
 function App() {
     this._mapPromise = Utils.loadJSON("data/map.json", "GET", "");
     this._productsPromise = Utils.loadJSON("/products", "GET", "");
-    this._statistician = new SampleStatistician();
+    this._statistician = new SampleStatistician(this);
     this._viewmodel = new Viewmodel(this.onScreenChanged.bind(this), this.onUserPathReceived.bind(this), this._statistician);
     this._userTracker = this._statistician.registerTracker();
     this._animationFrameId = null;

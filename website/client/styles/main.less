@@ -1,0 +1,85 @@
+canvas {
+    border: 2px solid black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@header-font-family: Calibri;
+
+.logo, .mini-logo {
+    font-size: 5em;
+    text-align: center;
+    .unselectable;
+    .bacon-part {
+        font-family: "TasteTheBacon";
+    }
+    .spam-part {
+        font-family: @header-font-family;
+    }
+}
+.mini-logo {
+    font-size: 2em;
+    float: left;
+    cursor: pointer;
+    border-right: 4px solid snow;
+    //height: 95%;
+    margin: @header-size / 3;
+    padding-right: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: @header-font-family;
+    .unselectable;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -9999;
+}
+
+@header-size: 10vh;
+header {
+    background-color: #383A35;
+    position: fixed;
+    width: 100vw;
+    height: @header-size;
+    .unselectable;
+
+    ul {
+        float: right;
+        li {
+            cursor: pointer;
+            display: inline;
+            list-style-type: none;
+            padding-right: @header-size;
+            font-size: 0.4 * @header-size;
+        }
+    }
+}
+
+main {
+    width: 100vw;
+    height: 100vh - @header-size;
+    top: @header-size;
+    left: 0;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px black;
+}

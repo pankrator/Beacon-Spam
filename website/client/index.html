@@ -1,12 +1,77 @@
 <html>
 <head>
     <title>Beacon & Spam</title>
-    <link href="styles/main.css" rel="stylesheet"></link>
+    <style>
+        @font-face {
+            font-family: 'TasteTheBacon';
+            src: url('styles/fonts/TasteTheBacon.ttf') format('truetype');
+            src: url('styles/fonts/TasteTheBacon.eot?#iefix') format('embedded-opentype'),
+                 url('styles/fonts/TasteTheBacon.woff') format('woff'),
+                 url('styles/fonts/TasteTheBacon.ttf')  format('truetype'),
+                 url('styles/fonts/TasteTheBacon.svg#svgFontName') format('svg');
+        }
+    </style>
+    <link rel="stylesheet" href="styles/fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="thirdparty/nukun.css">
+    <link href="styles.bundle.css" rel="stylesheet"></link>
 </head>
 <body>
-    <h1>Hello there!</h1>
-    <canvas id="map-canvas" width="600px" height="600px"></canvas>
-    <canvas id="chart-canvas" width="600px" height="600px"></canvas>
+    <header>
+        <div class="mini-logo">
+            <span class="bacon-part link--nukun" data-bind="click: $root.loadScreen.bind($root, 0)">{BEA<span>C</span>ON}</span>
+        </div>
+        <ul>
+            <li class="link--nukun" data-bind="click: $root.loadScreen.bind($root, 1)"><i class="fa fa-globe"></i> Realtime <span>T</span>racking</li>
+            <li class="link--nukun" data-bind="click: $root.loadScreen.bind($root, 2)"><i class="fa fa-table" aria-hidden="true"></i> Stati<span>s</span>tics</li>
+            <li class="link--nukun" data-bind="click: $root.loadScreen.bind($root, 3)"><i class="fa fa-info-circle"></i> A<span>b</span>out</li>
+        </ul>
+    </header>
+    <main data-bind="if: currentScreen() === 0">
+        <video class="background-video"
+            autoplay
+            loop
+            src="styles/fonts/shopping_mall_time_lapse.webm">
+        </video>
+        <h1 class="logo">
+            <span class="bacon-part">{BEACON}</span></br>
+            <span class="spam-part">&</span></br>
+            <span class="spam-part">SPAM</span>
+        </h1>
+        <h2 class="subtitle">
+            The next-gen method of gathering locational data.</br>
+            Welcome to the future.
+        </h2>
+    </main>
+    <main data-bind="if: currentScreen() === 1">
+        <canvas id="map-canvas" width="600px" height="600px"></canvas>
+        <aside>
+            <h3>Realtime tracker</h3>
+            <p>
+                Track the movement of people in your store in real-time!
+            </p>
+        </aside>
+    </main>
+    <main data-bind="if: currentScreen() === 2">
+        <div class="canvas-container">
+            <canvas id="chart-canvas" width="600px" height="600px"></canvas>
+        </div>
+        <nav data-bind="with: charterSettings">
+            <h3>Use this panel to analyze the gathered information</h3>
+            <label>
+                I'd like to render a
+                <select data-bind="options: chartTypes, value: selectedChart"></select>
+                chart,
+            </label>
+            </br>
+            <label>
+                with data gathered between
+                <input type="datetime" data-bind="value: dataFrom"></input>
+                and
+                <input type="datetime" data-bind="value: dataFrom"></input>
+            </label>
+            </br>
+        </nav>
+    </main>
 
     <script src="thirdparty/knockout-latest.js"></script>
     <script src="thirdparty/q.js"></script>

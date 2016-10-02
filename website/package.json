@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "grunt-browserify": "^5.0.0",
+    "grunt-contrib-less": "^1.4.0",
     "grunt-contrib-watch": "^1.0.0",
     "load-grunt-tasks": "^3.5.2"
   }

@@ -1,6 +1,6 @@
-
-var genetic = require('genetic')
-var Task = genetic.Task
+"use strict";
+var Genetic = require('./Genetic.js')
+var Task = Genetic
     , options = { getRandomSolution : getRandomSolution
     , popSize : 50
     , stopCriteria : stopCriteria
@@ -218,10 +218,10 @@ var subgraph = function(graph, subset) {
     var newGraph = [];
     var nv = subset.length;
 
-    for(i = 0; i < nv; i++) newGraph[i] = [];
+    for(var i = 0; i < nv; i++) newGraph[i] = [];
 
-    for(i = 0; i < nv; i++) {
-        for(j = 0; j < nv; j++) {
+    for(var i = 0; i < nv; i++) {
+        for(var j = 0; j < nv; j++) {
             newGraph[i][j] = graph[subset[i]][subset[j]]
         }
     }
@@ -242,15 +242,47 @@ var getEdge = function(u, v) {
 }
 
 
+var dist = function(p1, p2) {
+    let dx = p1.x - p2.x;
+    let dy = p1.y - p2.y;
+    return Math.sqrt(dx*dx + dy*dy)
+}
 
 
+var getRouteByCoords = function(coords, callback) {
+    numVerts = coords.length;
 
+    var idNameMapping = Object.keys(coords);
+    graph = [];
+    for(i = 0; i < numVerts; i++) graph[i] = [];
+
+    for(var i = 0; i < numVerts; i++) {
+        for(var j = 0; j < numVerts; j++) {
+            graph[i][j] = dist(coords[idNameMapping[i]], coords[idNameMapping[j]]);
+        }
+    }
+
+    var t = new Task(options)
+
+//t.on('statistics', function (statistics) { console.log('statistics', 1e9 - statistics.maxScore)})
+
+    t.on('error', function (error) { console.log('ERROR - ', error) })
+    t.run(function (stats) {
+        var res = stats.max.data.map(function (id) {
+            return idNameMapping[id];
+        });
+        res.splice(0, 0, idNameMapping[0]);
+        res.push(idNameMapping[0])
+        callback(res)
+        //console.log('results', 1e9 - stats.maxScore, stats.max.data)}
+    })
+}
 
 
 var getRoute = function(callback) {
     numVerts = 5;
 
-    var graph = [
+    graph = [
         [0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0],

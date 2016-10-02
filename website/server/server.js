@@ -10,9 +10,11 @@ const session = require('express-session');
 const bodyParser = require("body-parser");
 const restify = require("restify");
 const trilaterate = require('./maths/trilaterate');
+const tsp = require('./maths/tsp.js');
 const beaconDistanceCalculator = require('./maths/distance');
 let beaconBlackboard = require('./beacon_blackboard');
 let listeners = eval("new Object(" + fs.readFileSync('./../website/client/data/map.json') + ");").listeners;
+let places = eval("new Object(" + fs.readFileSync('./../website/client/data/map.json') + ");").places;
 
 function Server() {
     Q.longStackSupport = true;
@@ -83,9 +85,39 @@ let sendBeaconData = function (req, res) {
     res.send(data);
 }
 
+let products = {
+    "Beer" : "Alcohol",
+    "Vodka" : "Alcohol",
+    "Laptop" : "Tech",
+    "Cookies" : "Bakery",
+    "Bread" : "Bakery",
+    "Headphones" : "Tech",
+    "Baby Food" : "Babyfood",
+};
+
+let pathByProducts = function(req, res) {
+    let selectedProducts = req.body;
+    let places = {"Scena":{}};
+
+    for(let pr in selectedProducts) {
+        if (!places.hasOwnProperty(pr)) {
+            places[pr] = places.filter(function(pl) { return pl.name === pr;})[0].rects[0];
+        }
+    }
+
+    tsp.getRouteByCoords(req, function(route) {
+        res.send(route);
+    })
+}
+
 Server.prototype.__setupRouting = function () {
     this.app.post("/beacon/data", handleBeaconInfo);
     this.app.get("/beacon", sendBeaconData);
+    this.app.get("/products", function (req, res) {
+        res.send(Object.keys(products));
+    })
+    this.app.post("/path", pathByProducts);
+
 
     // Static files are added last as they match every request
     this.app.get(".*", restify.serveStatic({

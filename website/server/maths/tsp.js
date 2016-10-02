@@ -246,10 +246,22 @@ var dist = function(p1, p2) {
     let dx = p1.x - p2.x;
     let dy = p1.y - p2.y;
     return Math.sqrt(dx*dx + dy*dy)
-}
+};
+
+
+var replaceByCenters = function (coords) {
+    for(let key in coords) {
+        coords[key].x += coords[key].width/2;
+        coords[key].y += coords[key].height/2;
+
+        delete coords[key].width
+        delete coords[key].height
+    }
+};
 
 
 var getRouteByCoords = function(coords, callback) {
+    replaceByCenters(coords);
     numVerts = coords.length;
 
     var idNameMapping = Object.keys(coords);

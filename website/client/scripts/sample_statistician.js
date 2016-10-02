@@ -18,15 +18,16 @@ SampleStatistician.prototype.removeTracker = function (tracker) {
 SampleStatistician.prototype.updateTrackers = function () {
     window.s = this;
     return Utils.loadJSON("/beacon", "GET").done((beaconPositionInTime) => {
-        // console.log('data has come!', beaconPositionInTime);
-        beaconPositionInTime.forEach(function(beaconsPosition) {
-            for (let beaconId in beaconsPosition) {
+        if (beaconPositionInTime.length === 0) return;
+        console.log('data has come!', beaconPositionInTime);
+        beaconPositionInTime.forEach(beaconsPosition => {
+            for (let beaconId in beaconsPosition.beaconPositions) {
                 let el = _.find(this._trackers, { id: beaconId});
                 if (el) {
-                    beaconsPosition[beaconId].timestamp = beaconsPosition.timestamp;
-                    el.samples.push(beaconsPosition[beaconId]);
+                    beaconsPosition.beaconPositions[beaconId].timestamp = beaconsPosition.timestamp;
+                    el.samples.push(beaconsPosition.beaconPositions[beaconId]);
                 } else {
-                    this._trackers.push(new Tracker(Infinity, beacon.id, [beaconsPosition[beaconId]]));
+                    this._trackers.push(new Tracker(Infinity, beaconId, [beaconsPosition.beaconPositions[beaconId]]));
                 }
             }
 

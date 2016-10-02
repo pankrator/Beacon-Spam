@@ -12,20 +12,22 @@ function timespanFromTime(hours, minutes, seconds, milliseconds) {
     return milliseconds;
 };
 
+Q.longStackSupport = true;
 function main() {
     let mapPromise = Utils.loadJSON("data/map.json", "GET", "");
     let canvas = document.getElementById("map-canvas");
     let context = canvas.getContext("2d");
     let renderer = new MapRenderer(context);
+    
+    let statistician = new SampleStatistician();
     mapPromise.done(mapData => {
         renderer.initForMap(mapData);
         const renderFrame = function () {
-            renderer.renderFrame();
+            renderer.renderFrame(statistician.getTrackers());
             requestAnimationFrame(renderFrame);
         };
         renderFrame();
     });
-    let statistician = new SampleStatistician();
     //let tracker = statistician.registerTracker();
     setInterval(statistician.updateTrackers.bind(statistician), 100);
     //renderer.registerTracker(tracker);

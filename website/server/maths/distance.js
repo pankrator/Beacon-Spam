@@ -17,24 +17,25 @@ module.exports = function(measurements, txPower) {
 
 function filterOutliers(measurements) {
     measurements.sort((m1, m2) => m1.rssi - m2.rssi);
-    measurements.pop();
-    measurements.shift();
+    // measurements.pop();
+    // measurements.shift();
 
     return measurements;
 }
 
 function calculateDistance(rssi, txPower) {
   if (rssi === 0) {
-    return false;
+    return 0;
   }
 
   let factor;
+
   if (rssi < -90) {
-      factor = 3;
-  } else if (rssi < -80) {
       factor = 2.5;
-  } else if (rssi < -75) {
+  } else if (rssi < -80) {
       factor = 2;
+  } else if (rssi < -75) {
+      factor = 1.7;
   } else {
       factor = 0.89976;
   }

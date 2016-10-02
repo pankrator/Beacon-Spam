@@ -4,7 +4,6 @@ const Utils = require("./utils");
 function MapRenderer(context) {
     this._context = context;
     this._map = null;
-    this._trackers = [];
 };
 
 MapRenderer.prototype.initForMap = function (mapData) {
@@ -64,8 +63,8 @@ MapRenderer.prototype._renderMap = function () {
     }
 };
 
-MapRenderer.prototype._renderTrackers = function () {
-    for (const tracker of this._trackers) {
+MapRenderer.prototype._renderTrackers = function (trackers) {
+    for (const tracker of trackers) {
         if (tracker.samples.length === 0) {
             continue;
         }
@@ -80,17 +79,9 @@ MapRenderer.prototype._renderTrackers = function () {
     }
 };
 
-MapRenderer.prototype.renderFrame = function () {
+MapRenderer.prototype.renderFrame = function (trackers) {
     this._renderMap();
-    this._renderTrackers();
-};
-
-MapRenderer.prototype.registerTracker = function (tracker) {
-    this._trackers.push(tracker);
-};
-
-MapRenderer.prototype.removeTracker = function (tracker) {
-    this._trackers.remove(tracker);
+    this._renderTrackers(trackers);
 };
 
 module.exports = MapRenderer;

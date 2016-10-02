@@ -69,15 +69,19 @@ var trilaterate = function (p1, p2, p3, r1, r2, r3) {
     if(p3.y == p1.y) {
         return trilaterateAlgo(p3, pointSubtract(p1, p3), pointSubtract(p2, p3), r3, r1, r2);
     }
+    console.error("Can't trillaterate - erroneous fixed point setup!");
+    return {x: Infinity, y: Infinity};
 }
 
 var getLocation4Listeners = function(data) {
     var bestLocation, bestError = 1e9;
 
     // w/o point 0
-    loc = trilaterate(data[1].p, data[2].p, data[3].p, data[1].r, data[2].r, data[3].r);
-    err = Math.abs(dist(loc, data[0].p) - data[0].r);
+    let loc = trilaterate(data[1].p, data[2].p, data[3].p, data[1].r, data[2].r, data[3].r);
+    let err = Math.abs(dist(loc, data[0].p) - data[0].r);
     console.log("tril by points 0 1 2 ", loc, err)
+    console.log(err, bestError, "bestie UUU");
+    console.log(loc, JSON.stringify(data), "locy UUU");
     if (err < bestError) {
         bestError = err;
         bestLocation = loc;
@@ -110,6 +114,8 @@ var getLocation4Listeners = function(data) {
         bestError = err;
         bestLocation = loc;
     }
+
+    console.log("BERR", bestError);
 
     return bestLocation;
 }
